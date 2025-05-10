@@ -1,0 +1,23 @@
+<script>
+function add()
+{
+   this.x =20;
+    console.log("inside fun : ",this.x);
+}
+y= new add();
+console.log(typeof y)
+console.log("outside fun : ",this.x);
+</script>
+
+<!-- <script>
+    //akshay sir code
+    function show()
+    {
+      this.x = 10;  //this keyword represent current protoType object member
+      console.log("Inside : Value of x is : "+this.x);  
+    }
+     //show();
+     //Create a Object  
+    var obj = new show(); //new keyword is responsible for create  object 
+    console.log("Object : "+obj);
+  </script> -->

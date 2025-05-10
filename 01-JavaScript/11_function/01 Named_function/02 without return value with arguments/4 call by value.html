@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // 02 without return value with arguments.
+        function show(x)//defination.
+        {
+         document.write("The value of x is :",x," <br>");
+        }
+        //show(600);//calling by value.
+        var a=2000;
+        show(a);//call by actual paramater or call by value.
+        show(a);
+        show(400);//call by value.
+        document.write("<hr>");
+    </script> 
+        <script>
+             // 02 without return value with arguments.
+            function show(x,y)//defination.
+            {
+                var z=x+y;
+             document.write("Addition of ",x," and ",y," is : ",z," <br>");
+             ///document.write("Addition of ",x," and ",y," is : ",x+y," <br>");
+            }
+            //show(600);//calling by value.
+            var a=2000;
+            var b=1000;
+            show(a,b);
+        </script>
+
+    <!-- Akshay sir code -->
+    <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function show(x)  //Here x is formal Parameter : x = 1000  ,x = a
+        {
+          document.write("<h1>Inside Show Invoked : "+x+"</h1>");
+        }
+        //show(1000);  //call by value;
+         
+         var a = 200;
+         show(a); //call by actual parameter or call by value
+        
+        document.write("<h1>After Invoked : </h1>");
+      </script> -->
+
+      <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function add(x,y)  //defination
+        {
+           var z = x+y;
+           document.write("<h1>Add is : "+z+"</h1>"); 
+        }
+        var a = 20;
+        var b = 30;
+        add(a,b);
+        
+        document.write("<h1>After Function Invoked </h1>");
+        
+      </script> -->
+</body>
+</html>

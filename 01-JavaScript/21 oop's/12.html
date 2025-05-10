@@ -1,0 +1,25 @@
+<script>
+    // Single level inheritance
+    class a
+    {
+        x=100;
+        hello()
+        {
+            console.log("hello invoked:");
+        }
+    }
+    class b extends a
+    {
+        y=200;
+        demo()
+        {
+            console.log("Demo invoked:");
+            console.log("x:"+this.x);
+            console.log("y:"+this.y);
+        }
+    }
+    var obj= new b();
+    obj.demo();
+    obj.hello();
+
+</script>

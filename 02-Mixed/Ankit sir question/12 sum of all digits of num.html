@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //wap to print sum of all digits of a number.
+      let  num=parseInt(prompt("Enter a number"));
+      let  count=0;
+      let  on=num;
+      let  sumofdigits=0;
+      let  digits=num.toString().length;
+
+        for(i=0;i<digits;i++)
+    {
+        rem=num%10;
+        sumofdigits +=rem;
+        num=parseInt(num/10);
+
+    }
+    console.log("original num is : ",on);
+    console.log("Sum of digits is : ",sumofdigits);
+    </script>
+    
+</body>
+</html>

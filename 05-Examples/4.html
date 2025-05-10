@@ -1,0 +1,25 @@
+<script>
+    function convertTemperature(value, direction) {
+    if (direction === "CtoF") {
+        // Celsius to Fahrenheit
+        let fahrenheit = (value * 9/5) + 32;
+        console.log(`${value}°C is equal to ${fahrenheit.toFixed(2)}°F`);
+    } else if (direction === "FtoC") {
+        // Fahrenheit to Celsius
+        let celsius = (value - 32) * 5/9;
+        console.log(`${value}°F is equal to ${celsius.toFixed(2)}°C`);
+    } 
+    
+    else {
+        console.log("Invalid direction! Use 'CtoF' or 'FtoC'.");
+    }
+}
+
+// 🔥 Examples:
+convertTemperature(100, "CtoF"); // 100°C to °F
+convertTemperature(212, "FtoC"); // 212°F to °C
+convertTemperature(36, "CtoF");  // 36°C to °F
+convertTemperature(98, "FtoC");  // 98°F to °C
+convertTemperature(102,);
+
+</script>

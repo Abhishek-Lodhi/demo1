@@ -1,0 +1,29 @@
+<script>
+    // iife:-immidiately invoked function expression.
+    //()().
+    
+    (function show(){
+        console.log("show called");
+    })
+    ();
+    // second
+    (function abc(num){
+        console.log("abc invoked",num);
+    })
+    ("mahi");
+    //thired
+    (function(name){
+        console.log("function called",name);
+    })
+    ("abhishek");
+    //fourth
+    (()=>{
+        console.log("arrow function called");
+    })
+    ();
+    //fifth
+    ((name)=>{
+        console.log("arrow function called",name);
+    })
+    ("chiku");
+</script>

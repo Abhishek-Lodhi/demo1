@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // Write a function that counts how many words are in a sentance.
+     function show()//defination.
+     {
+       let x=prompt("enter string anything");
+       let count=0;
+
+    if(x!==null && x.trim() !== "")
+    {
+        
+    document.write("Hello ",x," <br>");
+    }
+   else
+   {
+    document.write(" You did not enter anything ");
+   }
+
+   x=x.toLowerCase(); //convert to cowercase.
+
+    for(let i=0;i<x.length;i++)
+   
+   {
+    let ch=x[i];
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+   {
+    count++
+    document.write("Vowel is : ",ch,"<br> ");
+   }
+
+   }
+   document.write("Total vowel Count is : ",count);
+  }
+  show();//calling.
+    </script> -->
+
+    <!-- //Chat GPT Code -->
+    <script>
+        function show() {
+            let x = prompt("Enter any sentence:");
+            let count = 0;
+            let inWord = false;
+    
+            if (x !== null && x !== "") {
+                document.write("Input: " + x + "<br>");
+    
+                for (let i = 0; i < x.length; i++) {
+                    let ch = x[i];
+    
+                    if (ch !== " " && inWord === false) {
+                        count++;          // new word starts
+                        inWord = true;    // we're inside a word
+                    } 
+                    else if (ch === " ") {
+                        inWord = false;   // word ended
+                    }
+                }
+    
+                document.write("Number of words: " + count);
+            } else {
+                document.write("You did not enter anything.");
+            }
+        }
+    
+        show();
+    </script>
+    
+     
+</body>
+</html>

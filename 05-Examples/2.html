@@ -1,0 +1,17 @@
+<script>
+    // wap to sum of even digits,odd digits and all digits in one program
+
+    let num = 123456;
+    let evensum = 0, oddsum = 0, totalsum = 0;
+
+    for(let digit of num.toString())
+{
+    digit =+digit;//shortcut:parseint(digit)-> +digit
+    // + sign automatically converts string to number
+    totalsum += digit;
+
+    digit % 2 === 0 ? evensum+=digit : oddsum+=digit;
+}
+console.log("Evensum : "+evensum+",oddsum : "+oddsum+",Totalsum : "+totalsum);
+console.log(`Evensum:${evensum},Oddsum:${oddsum},Totalsum:${totalsum}`);
+</script>

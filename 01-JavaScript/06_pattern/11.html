@@ -1,0 +1,73 @@
+<script>
+    /*
+    5
+    54
+    543
+    5432
+    54321
+    */
+    x=parseInt(prompt("Enter the value of X"));
+   // y=parseInt(prompt("Enter the value of Y"));
+    for(i=1;i<=x;i++)
+{
+    for(j=x;j>=x-i+1;j--)
+{   
+    
+    document.write("<b>",j," </b>");
+}
+document.write("<br> </br>");
+}
+document.write("<b>Bye.. </b>");
+</script>
+<!-- <script>
+    /*
+               5  
+            5  4  
+         5  4  3  
+      5  4  3  2  
+   5  4  3  2  1 
+    */
+    let x = parseInt(prompt("Enter The Value of X"));
+
+    for (let i = 1; i <= x; i++) {
+        // Print leading spaces for alignment
+        for (let k = 1; k <= x - i; k++) {
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+
+        // Print numbers
+        for (let j = x; j >=x- i+1; j--) {
+            document.write("<b>" + j + "&nbsp;&nbsp;</b>");
+        }
+
+        document.write("<br>");
+    }
+
+    document.write("<b>Bye..</b>");
+</script> -->
+<!-- <script>
+    /*
+       1  
+       1  2  
+       1  2  3  
+       1  2  3  4  
+       1  2  3  4  5  
+    */
+    let x = parseInt(prompt("Enter The Value of X"));
+
+    for (let i = 1; i <= x; i++) {
+        // Print leading spaces for alignment
+        for (let k = 1; k <= x - i; k++) {
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+
+        // Print numbers
+        for (let j = 1; j <= i; j++) {
+            document.write("<b>" + j + "&nbsp;&nbsp;</b>");
+        }
+
+        document.write("<br>");
+    }
+
+    document.write("<b>Bye..</b>");
+    </script> -->

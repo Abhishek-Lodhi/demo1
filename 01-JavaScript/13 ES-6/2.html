@@ -1,0 +1,19 @@
+<script>
+  function show() {
+    var x = 10;
+    let y = 12;
+
+    console.log("value of x is:", x);
+    console.log("value of y is:", y);
+
+    var x = 20;
+    console.log("value of x is:", x);
+    
+    //let y=25; // SyntaxError: 'y' has already been declared
+    // we can not re-declare :y
+
+    y=50;//but we can re-assign :y
+    console.log("value of y is:", y);
+  }
+  show();
+</script>

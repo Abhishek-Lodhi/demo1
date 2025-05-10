@@ -1,0 +1,46 @@
+<script>
+    //callback function using sync or blocking.
+    function abc(fun,b,c)//fun=show,a=12,b=13
+    {
+        console.log("abc invoked");
+        z=b+c;
+        fun(z);
+    }
+    //1st way
+    function show(result)//result=z
+    {
+        console.log("Show invoked",result);
+    }
+    abc(show,12,13);
+    //2nd way
+    abc((res)=>//res=z
+    {
+        console.log("result is:",res);
+    },22,44);
+
+</script>
+
+<!-- <script>
+    //akshay sir code
+    /*
+      Call Back Function Using Sync or Blocking
+    */
+    function abc(fun,a,b)  //fun = show,a = 11,b=22   
+    {
+      console.log("ABC Inovked : ");
+      var z = a+b;
+      fun(z);   //Callback Function Calling
+    }
+    /*
+    function show(result)  //result = z
+    {
+      console.log("Result is : "+result);
+    }
+    
+    abc(show,11,22)
+    */
+    
+    abc((res)=>{   //res = z;
+      console.log("Result is : "+res)
+    },22,33);
+    </script> -->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a function that takes string and return the number of vowel in it.
+     function show()//defination.
+     {
+       let x=prompt("enter string anything");
+       let count=0;
+
+    if(x!==null && x!== "")
+    {
+        
+    document.write("Hello ",x," <br>");
+    }
+   else
+   {
+    document.write(" You did not enter anything ");
+   }
+
+   x=x.toLowerCase(); //convert to cowercase.
+
+    for(let i=0;i<x.length;i++)
+   
+   {
+    let ch=x[i];
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+   {
+    count++
+    document.write("Vowel is : ",ch,"<br> ");
+   }
+
+   }
+   document.write("Total vowel Count is : ",count);
+  }
+  show();//calling.
+    </script>
+</body>
+</html>

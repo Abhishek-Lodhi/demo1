@@ -1,0 +1,27 @@
+<script>
+    // Taking input from user
+//const prompt = ("enter any char"); // This is for taking input in Node.js
+
+let letterCase = prompt("Enter 'U' for Uppercase or 'L' for Lowercase: ");
+let lastChar = prompt("Enter the last character you want to print: ");
+
+// Determine starting ASCII code
+let start = (letterCase === 'U' || letterCase === 'u') ? 65 : 97; // 65 for 'A', 97 for 'a'
+let end = lastChar.charCodeAt(0);
+let totalLines = end - start + 1;
+
+// Validate input
+if (totalLines <= 0) {
+    console.log("Invalid input. Please make sure the letter matches the case you selected.");
+} else {
+    // Printing pattern
+    for (let i = 1; i <= totalLines; i++) {
+        let pattern = '';
+        for (let j = 0; j < i; j++) {
+            pattern += String.fromCharCode(start + j);
+        }
+        console.log(pattern);
+    }
+}
+
+</script>

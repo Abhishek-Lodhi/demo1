@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // with return variable with arguments.
+        var add=function(x,y)
+        {
+            z=x+y;
+            return {a:x,b:y,c:z};
+        }
+        a=parseInt(prompt("Enter any number"));
+        b=parseInt(prompt("Enter any number"));
+
+       var res=add(a,b);
+
+       // var res=add(a,b);
+        document.write("Addition of x and y is : ",res.c," <br>");
+        document.write("Addition of ",res.a," and ",res.b," is : ",res.c," <br>");
+        document.write("Addition of ",a," and ",b," is : ",res.c,"<br> ");
+    </script>
+</body>
+</html>

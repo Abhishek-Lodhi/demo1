@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Duplicate Elements</title>
+  </head>
+  <body>
+    <script>
+                //print duplicate elements from given array.
+                arr=[10,5,46,48,2,3,45,6,85,45,56,7,2,7,40,10,5];
+                document.write("Original Array=");
+                for(i=0;i<arr.length;i++)
+                {
+                    document.write(arr[i]," ");
+                }
+                document.write("<br>")
+
+                //logic outer loop
+                document.write("Duplicate elements=")
+                for(i=0;i<arr.length;i++)
+                {
+                    var count=0;
+                    //check if already printed
+                    var alreadyPrinted=false;
+                    for(k=0;k<i;k++)
+                {
+                  if(arr[i]==arr[k])
+                  {
+                    alreadyPrinted=true;
+                    break;
+                  }
+                }
+                if(alreadyPrinted==false)
+                {
+                    for(j=0;j<arr.length;j++)
+                {
+                    if(arr[i]==arr[j])
+                {
+                    count++
+                }
+                }
+                }
+                if(count>1)
+                {
+                    document.write(arr[i]," ");
+                }
+                }
+                document.write("<br>Bye..");
+    </script>
+    <!-- <script>
+        // Chat GPT code 
+         //print duplicate elements from given array.
+
+      var array = [10,5,46,48,2,3,45,6,85,45,56,7,2,7,40,10,5];
+
+      document.write("<h3>Original Array:</h3>");
+      for (var i = 0; i < array.length; i++) {
+        document.write(array[i] + " ");
+      }
+
+      document.write("<br/><h3>Duplicate Elements:</h3>");
+
+      // Outer loop
+      for (var i = 0; i < array.length; i++) {
+        var count = 0;
+
+        // Check if already printed
+        var alreadyPrinted = false;
+        for (var k = 0; k < i; k++) {
+          if (array[i] == array[k]) {
+            alreadyPrinted = true;
+            break;
+          }
+        }
+
+        if (alreadyPrinted == false) {
+          // Count occurrences
+          for (var j = 0; j < array.length; j++) {
+            if (array[i] == array[j]) {
+              count++;
+            }
+          }
+
+          // If element appears more than once
+          if (count > 1) {
+            document.write(array[i] + " ");
+          }
+        }
+      }
+    </script> -->
+  </body>
+</html>

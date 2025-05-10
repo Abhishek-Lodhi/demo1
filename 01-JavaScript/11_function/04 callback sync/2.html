@@ -1,0 +1,59 @@
+<script>
+    //callback function using syncronus or blocking.
+    function abc(x) //x=xyz 
+    {
+        console.log("abc invoked");
+        x(); //callback function calling.
+    }
+    //1st way
+    function xyz()
+    {
+      console.log("xyz invoked");
+    }
+    abc(xyz);
+
+    //2nd way
+   var xyz= function(){
+        console.log("Annous fun invoked");
+    }
+    abc(xyz);
+
+   //3rd way
+    var xyz= ()=>{
+        console.log("Arrow fun invoked");
+    }
+    abc(xyz);
+
+    //4th way
+    abc(()=>{
+        console.log("Callback fun invoked");
+    })
+</script>
+
+<!-- <script>
+    //Akshay sir code.
+    /*
+      Call Back Function Using Sync or Blocking
+    */
+    function abc(fun)   //fun = xyz  or fun = ()=>{}
+    {
+      console.log("ABC Inovked : ");
+      fun();   //Callback Function Calling
+    }
+    
+    /*
+    var xyz = function()
+    {
+       console.log("XYZ Inovked : ")
+    }*/
+    /*
+    var xyz = ()=>{
+       console.log("XYZ Inovked : ")
+    }
+    
+    abc(xyz);  //function as an argumments
+    */
+    abc(()=>{
+      console.log("Callback Function Invoked : ")
+    })
+    </script> -->

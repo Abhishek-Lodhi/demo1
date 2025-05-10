@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to count no of digits of a number.
+        num=parseInt(prompt("Enter any number"));
+        digits=num.toString().length;
+
+        console.log("no of digits is ",digits," in num : ",num," ");
+    </script>
+    <script>
+        // using for loop without toString chat GPT
+    
+  // WAP to count number of digits using for loop (without using toString)
+  let num = parseInt(prompt("Enter a number"));
+  let on = num;
+  let count = 0;
+
+  // Handle 0 case separately (since log(0) is undefined)
+  if (num === 0) {
+    count = 1;
+  } else {
+    for (; num > 0; num = Math.floor(num / 10)) {
+      count++;
+    }
+  }
+
+  console.log("Original number is:", on);
+  console.log("Number of digits is:", count);
+
+
+    </script>
+    <script>
+        //using function
+        function countDigits()
+        {
+            num=parseInt(prompt("Enter any number"));
+            digits=num.toString().length;
+            console.log("no of digits is ",digits," in num : ",num," ");
+        }
+        countDigits();
+
+    </script>
+</body>
+</html>

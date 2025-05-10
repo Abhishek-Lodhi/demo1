@@ -1,0 +1,25 @@
+<script>
+    // Basic OOP'S
+    class demo
+    {
+        fun()
+        {
+            console.log("Function Invoked :");
+        }
+
+        show()
+        {
+            console.log("Show invoked : ");
+        }
+
+    }
+    //fun();//ReferenceError: fun is not defined
+    var obj= new demo();
+    console.log(typeof obj);//Object
+    console.log(obj);//demo {}
+
+    //calling
+    obj.fun();//Function Invoked :
+    obj.show();//Show Invoked :
+
+</script>

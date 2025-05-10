@@ -1,0 +1,26 @@
+<script>
+    /* 
+           1 
+          1 2
+         1 2 3
+        1 2 3 4
+       1 2 3 4 5
+  */
+   let x = parseInt(prompt("Enter The Value of X"));
+
+   for (let i = 1; i <= x; i++) {
+       // Print leading spaces for alignment
+       for (let k = 1; k <= x - i; k++) {
+           document.write("&nbsp;&nbsp;&nbsp;");
+       }
+
+       // Print numbers
+       for (let j = 1; j <= i; j++) {
+           document.write("<b>" + j + "&nbsp;&nbsp;&nbsp;&nbsp</b>");
+       }
+
+       document.write("<br>");
+   }
+
+   document.write("<b>Bye..</b>");
+</script>

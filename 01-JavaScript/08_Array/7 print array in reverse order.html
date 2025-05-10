@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        arr=[10,12,5,78,56,23,45,40,80];
+
+        document.write("Actual Arr is=");
+        for(i=0;i<arr.length;i++)
+        {
+            document.write(arr[i]," ");
+        }
+    //     for(a of arr)
+    // {
+    //     document.write(" ",a ," ")
+    // }
+    document.write("<br>")
+
+        document.write("Arr in Reverse Order=");
+        for(i=arr.length-1;i>=0;i--)
+       
+    {
+     document.write(" ",arr[i],"");
+    }
+
+    </script> -->
+    <!-- Akshay sir code -->
+    <script>
+        var arr = [11,22,33,44,55,66,77,88,99,100];
+        var temp;
+        
+        document.write("<h1>Actual Array Elements is : </h1>");
+         for(var i=0;i<arr.length;i++)
+         {
+            document.write(arr[i]+"&nbsp;&nbsp;");
+         }
+         
+         //Logics
+         for(var i=0;i<parseInt(arr.length/2);i++)
+         {
+            temp = arr[i];
+            arr[i] = arr[arr.length-1-i];
+            arr[arr.length-1-i] = temp; 
+         }
+         
+         
+         document.write("<h1>Reverse Array Elements is : </h1>");
+         for(var i=0;i<arr.length;i++)
+         {
+            document.write(arr[i]+"&nbsp;&nbsp;");
+         }
+        
+      </script>
+</body>
+</html>

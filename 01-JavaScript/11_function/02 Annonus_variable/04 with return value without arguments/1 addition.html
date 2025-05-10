@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //with return value without arguments.
+        var add=function()
+        {
+            x=20;
+            y=30;
+            z=x+y;
+
+            return {a:x,b:y,c:z};
+        }
+       var a= add();
+        document.write(z,"<br>")
+        document.write("Addition of ",add().a," and ",add().b," is: ",add().c,"<br> ");
+        document.write("Addition of ",a.a," and ",a.b," is: ",a.c,"<br> ");
+
+    </script>
+</body>
+</html>

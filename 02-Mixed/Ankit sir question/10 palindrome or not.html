@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show()
+        {
+            n=parseInt(prompt("Enter any number"));
+            actual_no=n;
+            rev=0;
+
+            while(n!=0)
+        {
+            lastdigit=n%10;
+            rev=rev*10+lastdigit;
+            n=parseInt(n/10);
+        }
+        document.write("Actual no is : ",actual_no,"<br> ");
+        document.write("Reverse no is : ",rev,"<br> ");
+
+        if(actual_no==rev)
+        {
+            document.write(" No is Palindrome : ",actual_no," ");
+        }
+        else
+        {
+            document.write(" No is Not Palindrome : ",actual_no," ");
+        }
+        
+        }
+        show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<script>
+    //in ES-5 without Destructuring
+    var arr=[10,20,30,40,50];
+    console.log(arr);
+
+    x=arr[0];
+    y=arr[1];
+    z=arr[2];
+    a=arr[3];
+    b=arr[4];
+
+    console.log(`${x}:${y}:${z}:${a}:${b}:`);
+    
+    //in ES-6 using De-structuring
+    var [a,b,c,d,e]=arr;
+    console.log(`${a}:${b}:${c}:${d}:${e}:`);
+
+</script>
+
+<script>
+    //sir
+    /*
+     Destructuring Assignment : 
+     
+     Destructuring is one of the most popular features of ES6. The destructuring assignment is 
+                                 an expression that makes it easy to extract values from arrays, 
+                                 or properties from objects, into distinct variables 
+    
+                          : There are two types of destructuring assignment expressions, namely, 
+                          1. Array Destructuring 
+                          2. Object Destructuring.     
+    */
+    
+    //In ES-5 : Without De-structurings
+    
+    var arr = [11,22,33,44,55];
+    console.log(arr);
+    
+    var x = arr[0];
+    var y = arr[1];
+    var z = arr[2];
+    var a = arr[3];
+    var b = arr[4];
+    
+    console.log(`${x} : ${y} : ${z} : ${a} : ${b}`);
+    
+    //In Es-6 : Using De-structuring
+    var [p,q,r,s,t] = arr;
+     console.log(`${p} : ${q} : ${r} : ${s} : ${t}`);
+     
+  </script>

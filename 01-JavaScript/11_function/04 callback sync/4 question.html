@@ -1,0 +1,31 @@
+<script>
+    /*
+    
+    //WAP to check a number is even or odd using function , 
+    its response must be used by callback for further decision. 
+    If a number is even then then check it is +ve/-ve , 
+    if odd check divisibility by 5
+    */
+    function checkEvenOdd(num,fun)
+    {
+      if(num%2==0)
+      {
+        console.log("Number is Even : "+num);
+        fun(num);
+      }
+    }
+    
+    var num = 15
+    checkEvenOdd(num,(result)=>{
+        if(result>0)
+        {
+          Console.log("Given number is Positive");
+        }	
+        else
+        {
+            Console.log("Given number is Negative");
+          (num%5==0) ? console.log("Divisible by 5 ") : console.log("Not Divisible by 5 ")
+        }
+    });
+    
+    </script>

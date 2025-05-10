@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a program to swap two numbers.using thired variable 
+        document.write("<h1>swap using thired var</h1>");
+        x=10;
+        y=15;
+        document.write("<h1>before swap x: <mark>",x," </h1><mark>");
+        document.write("<h1>before swap y: <mark>",y," </h1><mark>");
+        
+        z=x;   //z=10
+        x=y;   //x=15
+        y=z;   //y=10
+        
+        document.write("<h1>After swap x:<mark> ",x," </h1><mark>");
+        document.write("<h1>After swap y:<mark> ",y," </h1><mark><hr>");
+
+        // without using thired variable.
+        document.write("<h1>swap without using thired var</h1>");
+
+         x=150;
+         y=500;
+
+         document.write("<h1>before swap x:<mark> ",x," </h1><mark>");
+         document.write("<h1>before swap y:<mark> ",y," </h1><mark>");
+
+         x=x+y;  //x=650
+         y=x-y;  //y=650-500=150
+         x=x-y;  //x=650-150=500
+         document.write("<h1>After swap x:<mark> ",x," </h1><mark>");
+         document.write("<h1>After swap y:<mark> ",y," </h1><mark><hr>");
+
+         //using array
+         document.write("<h1>swap using destructuring Assignment</h1>");
+         x=20;
+         y=30;
+
+         document.write("<h1>before swap x: <mark>",x," </h1><mark>");
+         document.write("<h1>before swap y:<mark> ",y," </h1><mark>");
+
+         [x,y]=[y,x];
+
+         document.write("<h1>After swap x:<mark> ",x," </h1><mark>");
+         document.write("<h1>After swap y:<mark> ",y," </h1><mark>");
+
+        
+
+    </script>
+</body>
+</html>

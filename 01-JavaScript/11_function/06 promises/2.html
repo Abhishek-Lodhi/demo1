@@ -1,0 +1,70 @@
+<script>
+//check even odd using promise.
+function demo(numm){
+    return new Promise((resolve,reject)=>{
+        if(numm%2==0)
+    {
+        resolve("even");
+    }
+    else{
+        reject("odd");
+    }
+    })
+}
+var numm=21;
+//var result=demo(numm)
+ //console.log(m);
+// console.log(demo());
+// console.log("result is"+result)
+// console.log(result);
+
+
+//  result.then((m)=>{
+//     console.log(m);
+//  }).catch((m)=>{
+//     console.log(m);
+//  })
+// demo(numm).then((m)=>{
+//     console.log(m);
+//  }).catch((m)=>{
+//     console.log(m);
+//  })
+
+demo(numm).then((msg)=>{
+    console.log("Given number is : "+msg)
+    }).catch((msg)=>{
+      console.log("Given number is : "+msg)
+    })
+</script>
+<!-- 
+<script>
+    // akshay sir code..
+    function check(num)
+    {
+       return new Promise((resolve,reject)=>{
+           if(num%2==0)
+          {
+            resolve("Even")
+          }		 
+          else
+          {
+            reject("Odd")
+          }
+       })
+    }
+    
+    var num = 21;
+    /*
+    var res = check(num);
+    res.then((msg)=>{
+      console.log("Given number is : "+msg)
+    }).catch((msg)=>{
+       console.log("Given number is : "+msg)
+    })*/
+    
+    check(num).then((msg)=>{
+    console.log("Given number is : "+msg)
+    }).catch((msg)=>{
+      console.log("Given number is : "+msg)
+    })
+  </script> -->

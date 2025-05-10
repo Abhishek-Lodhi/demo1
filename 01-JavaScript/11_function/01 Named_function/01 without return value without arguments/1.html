@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1st question -->
+     
+    <script>
+      // 1 without return value without arguments.
+    
+        function show()//defination
+        {
+            document.write("Hello World <br>");
+        }
+        show();//function calling
+        show();
+        
+        document.write("<hr>");
+    </script>
+
+<!-- second question -->
+    <script>
+       // 1 without return value without arguments.
+
+        function show()//defination
+        {
+            var x=100; //here x is local variable
+            document.write("Hello indore ",x," <br>");
+        }
+        show();//calling
+        show();
+        document.write("<hr>");
+        document.write("outside show() after invoked ",x," ");//give Error: x is not define.
+        document.write("<hr>");
+        show();
+         /*
+       Local variable : Declare & Define Inside the Function with the help of var keyword
+                      : We cannot Access outside the function body or block.
+                      : To Occupied Memory at a time of Function Calling  				
+      */  
+    </script>
+
+<!-- 3rd question -->
+    <script>
+       // 1 without return value without arguments.
+
+        function show()//defination
+        {
+            x=500; //here x is gloval variable.
+            document.write("hello students ",x,"<br> ");
+        }
+        show();//calling
+        show();
+        show();
+        document.write("outside show() after invoked ",x," <br>");
+        document.write("outside show() after invoked ",x," <br>");
+
+        document.write("<hr>");
+        
+      /*
+       Global variable : If Declare & Define Inside the Function without any keyword.
+                      : We can Access outside the function body or block or inside the program.
+                      : To Occupied Memory at a time of File or programe execution.  				
+      */  
+    </script>
+
+    <!-- Akshay sir code -->
+    <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function hello()  //defination
+        {
+          document.write("<h1>Hello Invoked : </h1>");
+        }
+         hello();
+        hello();   
+        document.write("<h1>After Function Invoked</h1>");
+        hello();
+        hello();
+        hello();
+        
+      </script> -->
+      
+      <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function show()  //defination
+        {
+          var x = 100;   //Here x is Local variable
+          document.write("<h1>Inside Show Invoked : "+x+"</h1>");
+        }
+        show();
+        
+        document.write("<h1>Outside Show After Invoked : "+x+"</h1>"); //Error : x is Not defined
+        
+      /*
+       Local variable : Declare & Define Inside the Function with the help of var keyword
+                      : We cannot Access outside the function body or block.
+                      : To Occupied Memory at a time of Function Calling  				
+      */  
+      </script> -->
+      
+      <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function show()  //defination
+        {
+          x = 100;   //Here x is Global variable
+          document.write("<h1>Inside Show Invoked : "+x+"</h1>");
+        }
+        show();
+        
+        document.write("<h1>Outside Show After Invoked : "+x+"</h1>"); //Error : x is Not defined
+        
+      /*
+       Global variable : If Declare & Define Inside the Function without any keyword keyword
+                      : We can Access outside the function body or block or inside the program.
+                      : To Occupied Memory at a time of File or programe execution.  				
+      */  
+      </script> -->
+</body>
+</html>

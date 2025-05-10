@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        /*wap to check a number is even or odd using function ,
+        it's response must be used by callback for further decision .
+        if a number is even than check it is +ve or -ve ,
+        if odd check divisibility by 5.
+        */
+       function check(num,fun)
+       {
+
+        if(num%2==0)
+       {
+        console.log("Number is Even",num);
+        
+       }
+       else
+       {
+        console.log("Number is odd",num);
+        if(num%5==0)
+       {
+        console.log("number is divisible by 5 ",num)
+       }
+       else
+       {
+        console.log("number is not divisible by 5 ",num)
+       }  
+    }
+      
+       fun(num);
+    }
+      var  num=parseInt(prompt("Enter any number"));
+   // var num=15;
+       check(num,(result)=>{
+        if(result>0)
+       {
+        console.log("Number is positive",num);
+       }
+       else
+       {
+        console.log("Number is negative");
+       }
+       });
+       
+       //check(num,fun);
+
+    </script> -->
+    <script>
+          /*wap to check a number is even or odd using function ,
+        it's response must be used by callback for further decision .
+        if a number is even than check it is +ve or -ve ,
+        if odd check divisibility by 5.
+        */
+        // chat GPT code 
+         // Step 1: Function banate hain jo even/odd check kare
+function checkEvenOdd(number, callback) {
+    if (number % 2 === 0) {
+        console.log("Number is Even:", number);
+        callback("even", number); // callback ko 'even' type aur number bhejte hain
+    } else {
+        console.log("Number is Odd:", number);
+        callback("odd", number);  // callback ko 'odd' type aur number bhejte hain
+    }
+}
+
+// Step 2: Hum number define karte hain
+let num = parseInt(prompt("Enter any number"));
+
+// Step 3: Function call karte hain aur callback pass karte hain
+checkEvenOdd(num, function(type, value) {
+    // Yahan par type ya toh 'even' hoga ya 'odd'
+    
+    if (type === "even") {
+        // Even number ke liye check karte hain positive ya negative
+        if (value > 0) {
+            console.log("Even number is Positive:", value);
+        } else if (value < 0) {
+            console.log("Even number is Negative:", value);
+        } else {
+            console.log("Even number is Zero");
+        }
+    } else if (type === "odd") {
+        // Odd number ke liye check karte hain divisible by 5
+        if (value % 5 === 0) {
+            console.log("Odd number is divisible by 5:", value);
+        } else {
+            console.log("Odd number is NOT divisible by 5:", value);
+        }
+    }
+});
+ 
+    </script>
+
+
+</body>
+</html>

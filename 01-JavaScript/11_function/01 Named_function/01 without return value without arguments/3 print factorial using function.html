@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // 1 without return value without arguments.
+         
+        function factorial()//defination.
+        {
+            num=5;
+            f=1;
+            for(i=1;i<=num;i++)
+        {
+            f=f*i;
+        }
+        document.write("<h1>factorial of <span style='color:blue'> ",num,"</span> is :<span style='color:red'> "+f+" </span></h1>"); 
+        }
+        factorial();//calling.
+    </script>
+    <!-- Akshay sir code -->
+    <!-- <script>
+        document.write("<h1>Before Function Invoked</h1>");
+        
+        function factorial()  //defination
+        {
+           var num = parseInt(prompt("Enter Any Value"));
+           var f =1;
+           
+           if (isNaN(num) || num < 0)
+            {
+         document.write("<h1>Please enter a valid non-negative number!</h1>");
+        return;
+          }
+
+           
+           for(var i=1;i<=num;i++)
+           {
+             f = f * i;
+           }
+           document.write("<h1>factorial of <span style='color:blue'> ",num,"</span> is :<span style='color:green'> "+f+" </span></h1>"); 
+           
+        }
+        factorial();
+        
+        document.write("<h1>After Function Invoked </h1>");
+        
+      </script> -->
+</body>
+</html>

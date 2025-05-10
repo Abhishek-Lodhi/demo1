@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Akshay sir code -->
+    <script>
+        //print all array element.
+
+        // 1st option using index number.
+         
+        var arr = [11,22,33,'Mahi','Chiki',true,'true',22.32,54.45,null];
+        
+        document.write("<h1>Array is=[",arr,"] </h1>");
+
+        document.write("<h2>1st Option</h2>");
+        
+        document.write(arr[0]+"<br/>");
+        document.write(arr[1]+"<br/>");
+        document.write(arr[2]+"<br/>");
+        document.write(arr[3]+"<br/>");
+        document.write(arr[4]+"<br/>");
+        document.write(arr[5]+"<br/>");
+        document.write(arr[6]+"<br/>");
+        document.write(arr[7]+"<br/>");
+        document.write(arr[8]+"<br/>");
+        document.write(arr[9]+"<br/>");
+        
+        document.write("<hr/>");
+
+        //second option using array length.
+        document.write("<h2>2nd Option</h2>");
+        var len = arr.length;
+        document.write("Length of Given Array is : "+len+"<br/>");
+        
+        for(var i=0;i<len;i++)
+        {
+          document.write(arr[i]+"<br/>");
+        }
+
+        document.write("<hr/>");
+
+        //3rd Option using array length.
+        document.write("<h2>3rd Option</h2>");
+        for(var i=0;i<arr.length;i++)
+        {
+          document.write(arr[i]+"<br/>");
+        }
+        
+        document.write("<hr/>");
+
+         //4th Option Using for of loop.
+         document.write("<h2>4th Option Using for of loop.</h2>");
+        for(var ar of arr)
+        {
+          document.write("<b>"+ar+"<b><br/>");
+        }
+        
+         document.write("<hr/>");
+
+         //5th Option Using for in loop.
+         document.write("<h2>5th Option Using for in loop</h2>");
+        for(var index in arr)
+        {
+          document.write("<b>"+index+"<b><br/>");
+        }
+        
+        document.write("<hr/>");
+
+      //6th Option Using for in loop.
+       document.write("<h2>6th Option Using for in loop</h2>");
+        for(var index in arr)
+        {
+          document.write("<b>"+index+" : "+arr[index]+"<b><br/>");
+        }
+        
+      </script>
+</body>
+</html>

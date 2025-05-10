@@ -1,0 +1,14 @@
+<script>
+    let num=12345;
+   let orgn=num;
+    let lastnum=0;
+    let sum=0;
+
+    for(;num>0;)
+{
+    lastnum= num%10;
+    sum=sum+lastnum;
+    num=parseInt(num/10);
+}
+console.log("Sum of digits of no "+orgn+" is: "+sum);
+</script>

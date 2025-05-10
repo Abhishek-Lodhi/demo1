@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <!-- sir code -->
+    <script>
+	  function checkValid()
+	  {
+	     var pass = document.getElementById('pass').value;
+		 var rpass = document.getElementById('rpass').value;
+		 
+		 var err1 = document.getElementById('err1');
+		 var err2 = document.getElementById('err2');
+		 
+		 if(pass.length == 0)
+		 {
+		    err1.innerHTML = "* plz enter password";
+			err1.style.color = 'red';
+		 }
+		 else 
+		 {
+		    err1.innerHTML = '';
+		 }
+		 if(rpass.length == 0)
+		 {
+		    err2.innerHTML = "* plz Re-enter password";
+		    err2.style.color = 'red';
+		 }
+		 else 
+		 {
+		    err2.innerHTML = '';
+		 }
+	  }
+	  function checkPass()
+	  {
+	     if(rpass.value !== pass.value)
+		 {
+		    err2.innerHTML = "*Plz enter correct password";
+			err2.style.color = 'red';
+		 }
+		 else
+		 {
+		    err2.innerHTML = '';
+		 }
+	  }
+	</script>
+  </head>
+  <body>
+    <center>
+	  <h1>Validation</h1>
+	  <input type="text" placeholder="Enter Password" id="pass" onblur="checkValid()"/>
+	  <span id="err1"></span>
+	  <br/><br/>
+	  <input type="text" placeholder="Re-Enter Password" id="rpass" onkeyup="checkPass()"/>
+	  <span id="err2"></span>
+	  <br/><br/>
+	  <button onclick="checkValid()">Submit</button>
+	</center>
+  </body> 
+</html>

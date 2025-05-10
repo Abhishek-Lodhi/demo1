@@ -1,0 +1,33 @@
+<script>
+// add default parameter
+function add(x,y,a=30,b=20){
+    document.write(`addition of : x: ${x}, y: ${y},a: ${a},b ${b}
+     is:`,x+y+a+b);
+}
+add(10,20,30,40);//100
+document.write("<br>")
+
+add(10,20,30);//80
+document.write("<br>")
+
+add(11,22);//83
+document.write("<br>")
+
+add(11);//NaN : not a number
+//document.write("<hr>")
+
+</script>
+
+<!-- <script>
+    //Default Parameter : 
+    function show(x,y,a = 10,b = 20)
+    {
+      document.write(x+y+a+b);
+    }
+    show(11,22,33,44);  //110
+    document.write("<br/>")
+    show(22,22);  //74
+    document.write("<br/>")
+    show(11);  //NaN
+  
+  </script> 

@@ -1,0 +1,62 @@
+ <script>
+    //basic OOP'S
+    //local parameters
+    //global access (not accessible)
+    //Error
+
+    class addition
+    {
+        getdata()
+        {
+            var x=10;
+            var y=20;//local variable: we can not access outside the function body
+        }
+        add(){
+            var z=x+y;
+        }
+        showdata()
+        {
+            console.log("x is:"+x);
+            console.log("y is:"+y);
+            console.log("sum is:"+z);
+        }
+    }
+    var obj=new addition();
+  //  console.log(typeof obj);
+   // console.log(obj);
+    //calling
+    obj.getdata();
+    obj.add();
+    obj.showdata();
+</script> 
+
+
+<!-- <script>
+    //Basic OOP'S :
+    //local parameters
+    //global access (not accessible)
+    //Error
+    
+    class Addition
+    {
+      getData()
+      {
+        var x = 100; 
+        var y = 200;  //Local Variable : We cannot access outside the function body
+      }
+      add()
+      {
+        var z = x+y;  
+      }
+      showData()
+      {
+        console.log("X : "+x);
+        console.log("Y : "+y);
+        console.log("Z : "+z);
+      }
+    }
+    var obj = new Addition();
+    obj.getData();
+    obj.add();
+    obj.showData();
+  </script> -->

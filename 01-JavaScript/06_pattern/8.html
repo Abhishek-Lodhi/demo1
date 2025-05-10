@@ -1,0 +1,73 @@
+<!-- <script>
+    /* 
+   1 
+   1 2
+   1 2 3
+   1 2 3 4
+   1 2 3 4 5
+   */
+   x=parseInt(prompt("Enter The Value of X"));
+  // y=parseInt(prompt("Enter The Value of Y"));
+      for(i=1;i<=x;i++)
+  {
+   for(j=1;j<=i;j++)
+  {
+   document.write("<b>",j," &nbsp &nbsp</b>");
+  }
+  document.write("<br></br>");
+  }
+  document.write("<b>Bye..</b>");
+</script>   -->
+<script>
+    /* 
+            1 
+          1 2
+        1 2 3
+      1 2 3 4
+    1 2 3 4 5
+   */
+   x=parseInt(prompt("Enter The Value of X"));
+  // y=parseInt(prompt("Enter The Value of Y"));
+      for(i=1;i<=x;i++)
+  { 
+    //print space
+    for(k=1;k<=x-i;k++)
+  {
+    document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+  }
+  //print numbers
+   for(j=1;j<=i;j++)
+  {
+   document.write("<b>",j," &nbsp; &nbsp;</b>");
+  }
+  document.write("<br>");
+  }
+  document.write("<b>Bye..</b>");
+</script>  
+<!-- chat gpt code -->
+ <!-- <script>
+     /* 
+            1 
+           1 2
+          1 2 3
+         1 2 3 4
+        1 2 3 4 5
+   */
+    let x = parseInt(prompt("Enter The Value of X"));
+
+    for (let i = 1; i <= x; i++) {
+        // Print leading spaces for alignment
+        for (let k = 1; k <= x - i; k++) {
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+
+        // Print numbers
+        for (let j = 1; j <= i; j++) {
+            document.write("<b>" + j + "&nbsp;&nbsp;&nbsp;&nbsp</b>");
+        }
+
+        document.write("<br>");
+    }
+
+    document.write("<b>Bye..</b>");
+</script> -->

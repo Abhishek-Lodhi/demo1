@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkvalid(){
+            var mobile=document.getElementById('mob').value;
+            var err1 =document.getElementById('err1');
+
+            if(mobile.length==0)
+        {
+            err1.innerHTML='plz enter mobile no';
+            err1.style.color='red';
+
+        }
+        else if (isNaN(mobile))
+        {
+            err1.innerHTML='plz enter Numeric value';
+            err1.style.color='red';
+        }
+        else if(mobile.length<10  || mobile.length>10)
+        {
+            err1.innerHTML='plz enter Only 10 digits';
+            err1.style.color='red';
+        }
+        else
+        {
+            err1.innerHTML='';
+        }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Validation</h1>
+        <input type="text" placeholder=" Enter Mobile No" id="mob" onkeyup="checkvalid()">
+        <span id="err1"></span>
+        <br><br>
+        <button onclick="checkvalid()">Submit</button>
+    </center>
+</body>
+</html>

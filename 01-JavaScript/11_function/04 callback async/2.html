@@ -1,0 +1,45 @@
+<script>
+    // callback function using asynchronous or non-blocking.
+    console.log("Before calling");
+    function abc(fun){
+        console.log("abc invoked");
+        //fun();//synchronous calling
+       // setTimeout(fun,2000);//asynchronous calling
+       setTimeout(()=>{//asynchronous calling with arguments.
+        fun(100)
+       },2000)
+    }
+    function xyz(res){
+        console.log("xyz invoked",res);
+    }
+    abc(xyz);//function calling
+    console.log("After calling");
+</script>
+
+<!--<script>
+    //akshay sir code.
+    /*
+      Call Back Function Using Async or Non-Blocking
+    */
+    
+    console.log("Before Calling....");
+    function abc(fun)   //fun = xyz
+    {
+      console.log("ABC Inovked : ");
+      
+      //fun(); //Sync Calling
+     // setTimeout(fun,3000);   //Async Calling
+        
+        setTimeout(()=>{   //Async Calling Wioth Argumnet
+             fun(100);	
+        },3000)
+     
+    }
+    
+    function xyz(res)
+    {
+       console.log("XYZ Inovked : "+res)
+    }
+    abc(xyz);  //function as an argumments
+    console.log("After Calling....");
+    </script>

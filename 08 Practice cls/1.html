@@ -1,0 +1,28 @@
+<script>
+    let num=123;
+   let orgn=num;
+    let lastnum=0;
+    let Reversenum=0;
+
+    for(;num>0;)
+{
+    lastnum= num%10;
+    Reversenum=Reversenum*10+lastnum;
+    num=parseInt(num/10);
+}
+console.log("Reverse no of "+orgn+" is: "+Reversenum);
+</script>
+<!-- using for loop -->
+<!-- <script>
+    let number = 123;
+    let orgnum = num;
+    let lnum = 0;
+    let Reverse = 0;
+
+    for (; num > 0; num = Math.floor(num / 10)) {
+        lnum = num % 10;
+        Reverse = Reverse * 10 + lnum;
+    }
+
+    console.log("Reverse no of " + orgnum + " is: " + Reverse);
+</script> -->

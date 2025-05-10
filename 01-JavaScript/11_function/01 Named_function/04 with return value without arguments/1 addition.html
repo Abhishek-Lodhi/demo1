@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // with return variable without arguments.
+
+        function add()
+        {
+            var x=10;
+            var y=20;
+            var z=x+y;
+
+            return z;
+        }
+        var result=add();
+        document.write("Addition is: ",result,"<br> ");
+        document.write("Addition is: ",add(),"<br><hr> ");
+    </script>
+
+<script>
+    // with return variable without arguments.
+
+    function add()
+    {
+        var x=10;
+        var y=20;
+        var z=x+y;
+
+        return {a:x,b:y,c:z};
+    }
+    var result=add();
+    document.write("value of a is: ",result.a,"<br> ");
+    document.write("value of b is: ",result.b,"<br> ");
+    document.write("value of c is: ",result.c,"<br> <hr>");
+    document.write("Addition of ",result.a," and ",result.b," is: ",add().c,"<br><hr> ");
+    
+    
+</script>
+</body>
+</html>

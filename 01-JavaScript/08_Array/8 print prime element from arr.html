@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //print prime element from given array using for loop.
+        arr=[40,50,2,46,41,89,71,73,100,95,83,93];
+        
+        //actual arr.
+        document.write("Actual Arr is= ");
+        for(a of arr)
+    {
+        document.write(a," ");
+    }
+    document.write("<br>")
+
+   //prime no logic
+
+    document.write("Prime Elements=")
+     for(i=0;i<arr.length;i++)
+     {
+        Number=arr[i];
+        count=0;
+
+    for(j=1;j<=arr[i];j++)
+    {
+        if(Number%j==0)
+      {
+        count++
+      }
+    }
+    
+    if(count==2)
+    {
+        document.write(Number," ");
+    }
+}
+
+
+
+    //  chat gpt code is.
+    
+    /*
+         // Given array
+      var arr = [40, 50, 2, 46, 41, 89, 71, 73, 100, 95, 83, 93];
+
+      // Show actual array
+      document.write("<h3>Actual Array:</h3>");
+      for (var i = 0; i < arr.length; i++) {
+        document.write(arr[i] + " ");
+      }
+
+      document.write("<br/><h3>Prime Elements:</h3>");
+
+      // Loop through each element of array
+      for (var i = 0; i < arr.length; i++) {
+        var num = arr[i];
+        var count = 0;
+
+        // Check how many numbers divide it
+        for (var j = 1; j <= num; j++) {
+          if (num % j == 0) {
+            count++;
+          }
+        }
+
+        // Prime number has exactly 2 factors: 1 and itself
+        if (count == 2) {
+          document.write(num + " ");
+        }
+      }
+    */
+    
+    
+    </script>
+</body>
+</html>

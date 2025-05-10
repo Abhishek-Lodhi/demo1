@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function larger()
+       {
+        x=parseInt(prompt("Enter frist number"));
+        y=parseInt(prompt("Enter second number"));
+        z=parseInt(prompt("Enter thired number"));
+        
+        if(x>=y && x>=z)
+    {
+        document.write(" x= ",x," is greater <br> ");
+    }
+    else if(y>=x && y>=z)
+    {
+        document.write("y= ",y," is greater <br> ");
+    }
+    else
+    {
+        document.write("z= ",z," is greater <br> ");
+    }
+    document.write(" Bye.. <br> ");
+       
+       } 
+       larger();
+       larger();
+       larger();
+    </script>
+</body>
+</html>

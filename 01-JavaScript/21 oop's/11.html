@@ -1,0 +1,32 @@
+<script>
+    //Single Level Inheritance
+
+    class a
+    {
+        hello()
+        {
+            console.log("Hello invoked:");
+        }
+    }
+    class b extends a
+    {
+        demo()
+        {
+            console.log("Demo invoked");
+        }
+    }
+
+    // var obj=new a();
+    // obj.hello();
+    // var ob=new b();
+    // ob.demo();
+
+    var o=new b();// child class object can access parent and child data
+    o.demo();//execute
+    o.hello();//execute
+
+    // var obj1= new a();
+    // obj1.hello();//execute
+    // obj1.demo();//error
+
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+         // callback function using async or non-blocking.
+         console.log("before calling...");
+        function abc(fun) //fun=xyz
+        {
+            console.log("abc invoked");
+            //fun();sync calling.
+            //setTimeout(fun,3000); async calling.
+            setTimeout(()=>{
+                //async calling without arguments.
+                fun(100);
+            },4000)
+        }
+        function xyz(res)
+        {
+            console.log("xyz invoked.",res);
+        }
+        abc(xyz);
+        console.log("after calling.")
+    </script> -->
+    <script>
+         /*wap to check a number is even or odd using function ,
+        it's response must be used by callback for further decision .
+        if a number is even than check it is +ve or -ve ,
+        if odd check divisibility by 5.
+        */
+       function check(callback)
+    {
+        n=parseInt(prompt("Enter any number"));
+        if(n%2==0)
+    {
+        console.log("number is even:",n);
+        callback();
+    }
+    else{
+        console.log("Number is odd:",n);
+        callback();
+    }
+    }
+    //callback function
+    function callback()
+    {
+        if("no is even",n)
+    {
+        if(n>0)
+    {
+        console.log("no is +ve",n);
+    }
+    else if(n==0)
+    {
+        console.log("no is zero",n);
+    }
+    else
+    {
+        console.log("no is -ve",n);
+    }
+    }
+    else{
+        if(n%5==0)
+    {
+        console.log("no is divisible by 5",n);
+    }
+    }
+    }
+    check(callback);
+    </script>
+</body>
+</html>

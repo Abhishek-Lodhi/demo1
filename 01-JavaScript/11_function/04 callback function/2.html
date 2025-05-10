@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(fun)//fun=xyz or fun=()=>{}
+        {
+            console.log("abc invoked:");
+            fun();
+        }
+          // 1st
+         var xyz=function()
+        {
+            console.log("xyz invoked");
+        }
+        abc(xyz);
+         //  2nd
+        var xyz=()=>{
+            console.log("XYZ invoked");
+        }
+        abc(xyz);// function as an arguments.
+           // 3rd
+        abc(()=>{
+            console.log("callback function invoked.")
+        })
+    </script>
+</body>
+</html>

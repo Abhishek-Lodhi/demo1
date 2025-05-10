@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write a function to remove duplicate character from a string.
+        function removeDuplicateChars(str) {
+  let result = "";
+  let seen = new Set();
+
+  for (let char of str) {
+    if (!seen.has(char)) {
+      result += char;
+      seen.add(char);
+    }
+  }
+
+  return result;
+}
+
+// Example:
+console.log(removeDuplicateChars("programming")); // Output: "progamin"
+
+/*
+Character | Seen Set       | Added to Result? | Result
+p         | { }            | ✅ Yes |            "p"
+r         | {p}            | ✅ Yes |            "pr"
+o         | {p, r}         | ✅ Yes |            "pro"
+g         | {p,r,o}        | ✅ Yes |            "prog"
+r         | {p,r,o,g}      | ❌ No  |            "prog"
+a         | {p, r, o, g}   | ✅ Yes |            "proga"
+m         | {p,r,o,g,a }   | ✅ Yes |            "progam"
+m         | {p,r,o,g,a,m}  | ❌ No  |            "progam"
+i         | {…}            | ✅ Yes |             "progami"
+n         | {…}            | ✅ Yes |            "progamin"
+g         | {…}            | ❌ No  |             "progamin"
+*/
+    </script>
+    <script>
+        let str = "programming";
+let result = "";
+let seen = new Set();
+
+for (let i = 0; i < str.length; i++) {
+  let char = str[i];
+
+  if (!seen.has(char)) {
+    result += char;
+    seen.add(char);
+  }
+}
+
+console.log("Original String: " + str);
+console.log("After Removing Duplicates: " + result);
+
+    </script>
+</body>
+</html>

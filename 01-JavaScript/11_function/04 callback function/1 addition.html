@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // call back function using sync or blocking.
+        function abc(fun)//fun=xyz
+        {
+            console.log("abc invoked:");
+            fun(xyz); // callback function calling.
+        }
+        function xyz()
+        {
+            console.log("xyz invoked");
+        }
+        abc(xyz);//function as an arguments.
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- akshay sir code -->
+    <!-- <script>
+        //Sum of Even Indexing Element
+        
+          var arr = [11,22,33,44,55,66,77,88,99,110];
+          var sum = 0;
+          
+          for(var i=0;i<arr.length;i++)
+          {
+             if(i%2==0)
+             {
+               document.write(arr[i]+"<br/>");
+               sum = sum + arr[i];
+             }
+          }
+          document.write("<h1>Sum of Array Element is : "+sum+"</h1>");
+          
+          document.write("<hr/>")
+          sum = 0;
+          for(var index in arr)
+          {
+            if(index%2==0)
+            {
+              document.write(index+" : "+arr[index]+"<br/>");
+              sum = sum + arr[index];
+            }
+          }
+          document.write("<h1>Sum of Array Element is : "+sum+"</h1>"); 
+          
+          
+        </script> -->
+     <!-- below is my code -->
+    <script>
+        //sum of even indexing.
+        a=[10,20,30,40,50,60,70,80,90,100];
+        sum=0;
+        for(i=0;i<a.length;i++)
+    {
+       if(i%2==0)
+       {
+        document.write("index",i,"=",a[i],"<br>" );
+        sum+=a[i];
+       }
+
+    }
+    document.write("Sum of even indexing=",sum,"<hr>");
+
+    //with for in loop sum of Odd indexing.
+    sum=0;
+    for(ab in a)
+    {
+        if(ab%2!==0)
+    {
+        document.write("index",ab,"=",a[ab],"<br>");
+        sum=sum+a[ab];
+    }
+    }
+    document.write("Sum of Odd indexing  =",sum)
+    </script> 
+</body>
+</html>

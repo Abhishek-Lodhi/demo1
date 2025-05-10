@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //03 with return variable with arguments.
+        function show(n)
+        {
+            f=1;
+            for(var i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+        return f; //function data return.
+        }
+       var n=parseInt(prompt("Enter any number for factorial"));
+       var result= show(n);
+       document.write("Factorial of ",n," is : ",result," ");
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Akshay sir code -->
+     <script>
+        //print array element in assinding order.
+        
+          var arr = [11,21,15,23,5,6,52,29,9,10];
+          
+          document.write("<h1>Actual Array Element is : </h1>");
+          for(var i=0;i<arr.length;i++)
+          {
+             document.write(arr[i]+"&nbsp;&nbsp;");
+          }
+          
+          document.write("<hr/>");
+          
+          //Logic : 
+          for(var i=0;i<arr.length;i++)
+          {
+            for(var j=i+1;j<arr.length;j++)
+            {
+               if(arr[i]>arr[j])
+               {
+                 //Login Swaping
+                 temp = arr[i];
+                 arr[i] = arr[j];
+                 arr[j] = temp;
+               }
+               //document.write("index ",i,"* ",j,"&nbsp;&nbsp;= [ ",arr," &nbsp;]<br>");
+            }
+            //document.write("<hr>");
+          }
+          document.write("<h1>Asscending Order Element is : </h1>");
+          for(var i=0;i<arr.length;i++)
+          {
+             document.write(arr[i]+"&nbsp;&nbsp;");
+          }
+        </script>
+        <!-- below is my code -->
+         
+      <!-- <script>
+        a=[15,25,10,16,18,25,59,65,43,4];
+        
+      
+        document.write("<h2>Actual Array is=",a," </h2>");
+      
+      //document.write("Actual Array is=",a[i]," &nbsp;");
+      // for(ab of a)
+      // {
+      //   document.write("",ab," &nbsp;");
+      // }
+      document.write("<hr>");
+
+      //logic
+      for(i=0;i<a.length;i++)
+      {
+        for(j=i+1;j<a.length;j++)
+      {
+        if(a[i]>a[j])
+      {
+        z=a[i];
+        a[i]=a[j];
+        a[j]=z;
+      }
+      document.write("index ",i,"* ",j,"&nbsp;&nbsp;= [ ",a," &nbsp;]<br>");
+      }
+      document.write("<hr>");
+      }
+      document.write("<h2>Asscending order array is= ",a,"<h2>");
+      </script> -->
+</body>
+</html>

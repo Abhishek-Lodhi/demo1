@@ -1,0 +1,44 @@
+<script>
+    var arr=[2,4,6,8,10,12,14,16,18,20];
+    var ar= arr.map((Element)=>{
+        return Element;
+    })
+    console.log(ar);
+
+   var ar=arr.map((Element)=>{
+        if(Element%4==0)
+    {
+        return Element;
+    }
+    })
+    console.log(ar);
+
+   var ar= arr.map((Element,index)=>{
+        return (`${index}: ${Element}`);
+    })
+    
+    console.log(ar);
+</script>
+
+<!-- <script>
+    //sir
+    var arr = [11,22,33,44,55,66,77,88,99,110]
+    
+    var ar = arr.map((ele)=>{
+      return ele;
+    })
+    console.log(ar)
+  
+    ar = arr.map((ele)=>{
+      if(ele%2==0)
+      {
+        return ele;
+      }
+    })
+    console.log(ar);
+    
+    arr.map((ele,index)=>{
+        document.write(`${index} : ${ele} <br/><br/>`);
+    })
+    console.log(ar);
+  </script> -->

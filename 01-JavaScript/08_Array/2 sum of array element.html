@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is akshay sir code -->
+    <script>
+        var arr = [11,22,33,44,55,66,77,88,99,110];
+        var sum = 0;
+        
+        for(var i=0;i<arr.length;i++)
+        {
+          document.write(arr[i]+"<br/>");
+          sum = sum + arr[i];
+        }
+        document.write("<h1>Sum of Array Element is : "+sum+"</h1>");
+        
+        document.write("<hr/>")
+        sum = 0;
+        for(var ar of arr)
+        {
+          document.write(ar+"<br/>");
+          sum = sum + ar;
+        }
+        document.write("<h1>Sum of Array Element is : "+sum+"</h1>"); 
+        
+      </script>
+    <!-- below is my code -->
+    <!-- <script>
+        document.write("<h2>With for loop</h2>");
+        a=[11,22,33,44,55,66,77,88,99,110];
+        sum=0;
+
+        for(i=0;i<a.length;i++)
+    {
+        document.write(a[i],"&nbsp;&nbsp;" )
+        sum=sum+a[i];
+    }
+    document.write("<br> total sum of array element=", sum );
+    document.write("<br>Bye..<hr>");
+
+    //with for of loop.
+    // a=[11,22,33,44,55,66,77,88,99,110];
+    document.write("<h2>With for of loop</h2>");
+    sum=0;
+    for(ar of a)
+    {
+        document.write(ar,"&nbsp;&nbsp;");
+        sum=sum+ar;
+    }
+    document.write("<br>sum of arrey element=",sum," ")
+    document.write("<br>Bye..<hr>");
+
+    //with for in loop.
+     a=[11,22,33,44,55,66,77,88,99,110];
+    document.write("<h2>With for in loop</h2>");
+    sum=0;
+    for(ab in a)
+    {
+        document.write(a[ab],"&nbsp;&nbsp;" );
+        sum+=a[ab];
+    }
+    document.write("<br>sum of arrey element=",sum," ")
+    document.write("<br>Bye..<hr>");
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!-- <script>
+    /*
+1    
+1  2    
+1  2  3    
+1  2  3  4    
+1  2  3  4  5   
+    
+
+             1    
+          1  2    
+       1  2  3    
+    1  2  3  4    
+ 1  2  3  4  5   
+*/
+    
+    for(i=1;i<=5;i++)
+       {
+        for(j=1;j<=i;j++)
+       {
+        document.write("<b>",j," &nbsp &nbsp</b>");
+       }
+       
+       document.write("<br></br>");
+       }
+       document.write("<b>Bye..</b>");
+    </script> -->
+
+
+
+<!--     
+    <script>
+        n=6;
+        for (let i = 1; i <= n; i++) {
+            // Printing spaces for right alignment
+            for (let k = n-i; k > 0; k--) {
+                document.write("&nbsp;&nbsp;&nbsp;&nbsp"); 
+            }
+            
+            // Printing numbers
+            for (let j = 1; j <= i; j++) {
+                document.write("<b>" + j + "&nbsp;&nbsp;</b>");
+            }
+
+            document.write("<br>");
+        }
+        document.write("<b>Bye..</b>");
+    </script>   -->
+
+    
+    <script>
+        /*
+          *
+         **
+        ***
+       ****
+      *****
+        */
+        n=5
+        ;
+        for (let i = 1; i <= n; i++) {
+            // Printing spaces for right alignment
+            for (let k =i; k <n; k++) {
+                document.write("&nbsp;&nbsp;"); 
+            }
+            
+            // Printing numbers
+            for (let j = 1; j <= i; j++) {
+                document.write( "*");
+            }
+
+            document.write("<br>");
+        }
+        document.write("<b>Bye..</b>");
+    </script>  

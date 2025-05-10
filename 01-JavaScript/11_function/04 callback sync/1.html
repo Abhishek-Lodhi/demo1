@@ -1,0 +1,38 @@
+<script>
+    //callback function using syncronus or blocking.
+    function abc(x)
+    {
+        console.log("abc invoked");
+        x(); //callback function calling.
+    }
+    function xyz()
+    {
+      console.log("xyz invoked");
+    }
+    abc(xyz);
+</script>
+
+<script>
+
+    //Akshay sir code.
+    /*
+      Call Back Function Using Sync or Blocking
+    */
+    function abc(fun)   //fun = xyz
+    {
+      console.log("ABC Inovked : ");
+      fun();   //Callback Function Calling
+    }
+    
+    function xyz()
+    {
+       console.log("XYZ Inovked : ")
+    }
+    
+    /*
+    abc(10);
+    xyz();
+    */
+    
+    abc(xyz);  //function as an argumments
+    </script> 

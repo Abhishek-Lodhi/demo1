@@ -1,0 +1,56 @@
+<script>
+    /*
+               5  
+            5  4  
+         5  4  3  
+      5  4  3  2  
+   5  4  3  2  1 
+    */
+    let x = parseInt(prompt("Enter The Value of X"));
+
+    for (let i = 1; i <= x; i++) {
+        // Print leading spaces for alignment
+        for (let k = 1; k <= x - i; k++) {
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+
+        // Print numbers
+        for (let j = x; j >=x- i+1; j--) {
+            document.write("<b>" + j + "&nbsp;&nbsp;</b>");
+        }
+
+        document.write("<br>");
+    }
+
+    document.write("<b>Bye..</b>");
+</script>  
+<script>
+//     let i,j,k;
+//     for(i=5;i<=1;i--)
+// {
+//     for(j=1;j<=5-i;j++)
+// {
+//     document.write("&nbsp &nbsp");
+// }
+// for(k=5;k>=i;k--)
+// {
+//     document.write("*");
+// }
+// document.write("<br>")
+// }
+
+// for(i=1;i<=5;i++)
+//    {
+//     for(k=1;k<=5-i;k++)
+//    {
+//     document.write(" &nbsp &nbsp &nbsp")
+//    }
+//     for(j=1;j<=i;j++)
+//    {
+//     document.write("<b>",j," &nbsp &nbsp</b>");
+//    }
+   
+//    document.write("<br></br>");
+//    }
+//    document.write("<b>Bye..</b>");
+</script>

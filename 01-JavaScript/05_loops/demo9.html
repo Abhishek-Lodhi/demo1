@@ -1,0 +1,24 @@
+<script>
+    //Primnt Given number into reverse Order.
+  
+    num = parseInt(prompt("Enter Any Number "));
+    document.write("<h1>Actual number :"+num+"</h1>");  
+   temp = num;
+   sum = 0;
+    while(num != 0)
+    {
+      rem = num%10;
+      sum = sum*10 + rem;
+      num = parseInt(num/10);
+    }
+    if(sum == temp)
+   {
+       document.write("<h1>Given number is Plaindrome:"+sum+"</h1>"); 
+  
+   }  
+   else
+   {
+     document.write("<h1>Given number is Not Plaindrome:"+sum+"</h1>"); 
+   }  
+   document.write("<h1>Bye.....</h1>");
+  </script>

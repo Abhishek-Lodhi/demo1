@@ -1,0 +1,21 @@
+<script>
+    //basic OOP'S
+
+    class addition
+    {
+        add(){
+            var x=10;
+            var y=20;
+            var z=x+y;//local variable: we can not access outside the function body
+
+            console.log("x is:"+x);
+            console.log("y is:"+y);
+            console.log("sum is:"+z);
+        }
+    }
+    var obj=new addition();
+    console.log(typeof obj);
+    console.log(obj);
+    //calling
+    obj.add();//sum is:30
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        str_num="Rs8856";
+        document.write("<h2>str Num is:",str_num," </h2>");
+
+        //this function take number only.
+        num1=str_num.replace(/[^\d]/g,"");
+        //document.write("<h2>Num1 is:",num1," </h2>");
+
+        //this will found how many Rs500 note this num take
+        note=Math.floor(num1/500);
+        document.write("<h2>500 Note is:",note," </h2>");
+        
+        //this will found remaning Amount.
+        rem=num1%500;
+        document.write("<h2>Remaning Amount is:",rem," </h2>");
+
+
+    </script> -->
+    <script>
+        str_num="Rs8856";
+        document.write("<h2>str Num is:",str_num," </h2>");
+
+        //this function take number only.
+        num1=str_num.replace(/[^\d]/g,"");
+        //document.write("<h2>Num1 is:",num1," </h2>");
+
+        //this will found how many Rs100 note this num take
+        note=Math.floor(num1/100);
+        document.write("<h2>100 Note is:",note," </h2>");
+        
+        //this will found remaning Amount.
+        rem=num1%100;
+        document.write("<h2>Remaning Amount is:",rem," </h2>");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write a program to check num is armstrong or not.
+      let  num=parseInt(prompt("Enter any number"));
+      let  on=num;
+      let  sum=0;
+      let  rem=0;
+      let digits=num.toString().length;
+
+
+        for (let i=0;i<digits;i++)
+    {
+         rem=num%10;
+         sum=sum+Math.pow(rem,digits);
+         num=parseInt(num/10);
+
+    }
+    console.log("Original num: ",on);
+    console.log("sum of power digits: ",sum);
+    
+    if(on===sum)
+    {
+        console.log("Num is armstrong",on);
+    }
+    else
+    {
+        console.log("Num is not armstrong",on);
+    }
+    </script>
+    <script>
+        // 🔧 Function to check Armstrong number
+        function isArmstrong(num) {
+          let originalNum = num;
+          let sum = 0;
+          let digits = num.toString().length;
+      
+          while (num > 0) {
+            let rem = num % 10;
+            sum += Math.pow(rem, digits);
+            num = Math.floor(num / 10);
+          }
+      
+          return sum === originalNum;
+        }
+      
+        // 📥 Input from user
+        let input = parseInt(prompt("Enter any number"));
+      
+        // 🔍 Check & Output
+        if (isArmstrong(input)) {
+          console.log(input + " is an Armstrong number ✅");
+        } else {
+          console.log(input + " is NOT an Armstrong number ❌");
+        }
+      </script>
+      
+</body>
+</html>

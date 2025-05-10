@@ -1,0 +1,24 @@
+<script>
+    // Check given number is palindrome or not.
+n=parseInt(prompt("Enter Any Number"));
+original_number=n;
+rev=0;
+i=1;
+
+while(n!=0)
+{
+    mod=n%10;
+    rev=rev*10 + mod;
+    n=parseInt(n/10);
+}
+if(original_number===rev)
+{
+    document.write("<h1>",original_number," is  palindrome</h1>");//121,12121
+}
+else
+{
+    document.write("<h1>",original_number," is not palindrome</h1>");//456
+}
+//document.write("orig no=",original_number);
+//document.write("reverse no=",sum);
+</script>

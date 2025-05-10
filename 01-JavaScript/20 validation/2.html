@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkvalid(){
+            var fname=document.getElementById('fname').value;
+            var lname=document.getElementById('lname').value;
+
+            var err1=document.getElementById('err1');
+            var err2=document.getElementById('err2');
+
+            console.log(fname+":"+lname);
+            console.log(fname.length+":"+lname.length);
+
+            if(lname.length==0){
+                err1.innerHTML="pls enter frist name";
+                err1.style.color='red';
+            }
+            else
+            {
+                err1.innerHTML='';
+            }
+            if(lname.length==0)
+            {
+                err2.innerHTML="pls enter lname";
+                err2.style.color='red';
+            }
+            else
+            {
+                err2.innerHTML='';
+            }
+        }
+    </script> 
+</head>
+<body>
+    <center>
+        <h1 style="color: darkviolet;">Validation</h1>
+        <input type="text" placeholder="Enter Frist Name" id="fname" onblur="checkvalid()">
+        <span id="err1"></span>
+        <br><br>
+        <input type="text" placeholder="Enter Last Name" id="lname" onblur="checkvalid()">
+        <span id="err2"></span>
+        <br><br>
+        <button style="background-color: green;" onclick="checkvalid()">Submit</button>
+        
+    </center>
+</body>
+</html>

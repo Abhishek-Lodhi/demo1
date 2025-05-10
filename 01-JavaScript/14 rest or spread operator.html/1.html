@@ -1,0 +1,36 @@
+<script>
+    //spread operator
+    var arr=[11,22,33,44,55,100];
+    console.log(arr);
+    console.log(arr.length);//6
+
+    arr=[...arr,66,77,99];
+    console.log(arr);
+    console.log(arr.length);//9
+
+    var s={s_rl:101,s_name:"Abhishek"};
+    console.log(s)
+   console.log(Object.keys(s).length)//2
+
+   s={...s,city:"sagar",state:"mp"};
+    console.log(s)
+    console.log(Object.keys(s).length)//4
+</script>
+
+<!-- <script>
+    //Spread Operator : 
+      var arr = [11,22,33,44,55];
+      console.log(arr);
+      console.log(arr.length);  //5
+      
+      arr = [...arr,66,77,88];
+      console.log(arr);
+      console.log(arr.length);  //8
+      
+      
+      var std = {id:101,name:'Mahi'};
+      console.log(std);
+      
+      std = {...std,fees:123.34};
+      console.log(std);
+    </script> -->

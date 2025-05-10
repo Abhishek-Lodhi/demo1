@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var obj1=document.getElementById('x').value;
+            var obj2=document.getElementById('y').value;
+            var res=document.getElementById('result');
+
+            var z=parseInt( obj1)+parseInt (obj2);
+            
+            alert("Addition is : "+z);
+            res.innerHTML="Addition is : "+z;
+            res.style.color='yellow';
+            res.style.background='Acqua';
+           // document.write(res);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1 style="color: red;">Addition Here !</h1>
+        <input type="text" placeholder="Enter the value of X" id="x">
+        <br><br>
+        <input type="text" placeholder="Enter the value of Y" id="y">
+        <br><br>
+        <button onclick="add()">Add !</button>
+        <h2 id="result"></h2>
+    </center>
+</body>
+</html>

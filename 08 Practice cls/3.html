@@ -1,0 +1,53 @@
+<!--
+ <script>
+    // Armstrong no without using loop
+
+    let num=prompt("Enter Any Three Digit Number");
+    let firstdigit=parseInt( num%10);//3
+    let secondDigit=parseInt((num%100)/10);//5
+    let thirdDigit=parseInt( num/100);
+    console.log(firstdigit);
+    console.log(secondDigit);
+    console.log(thirdDigit);
+
+    let ArmstrongNum=firstdigit*firstdigit*firstdigit+secondDigit*secondDigit*secondDigit+thirdDigit*thirdDigit*thirdDigit;
+    console.log(ArmstrongNum);
+    console.log(num);
+
+    if(num==ArmstrongNum)
+ {
+    console.log(num+" is an Armstrong number");
+ }
+ else
+ {
+    console.log(num+" is not an Armstrong number");
+ }
+ </script> -->
+
+ <!-- Armstrong no without using loop -->
+ <script>
+    let num=prompt("Enter Any Three Digit Number");
+    let firstdigit=parseInt( num%10);//3
+    let secondDigit=parseInt((num%100)/10);//5
+    let thirdDigit=parseInt( num/100);
+    console.log(firstdigit);
+    console.log(secondDigit);
+    console.log(thirdDigit);
+
+    // let ArmstrongNum=firstdigit*firstdigit*firstdigit+secondDigit*secondDigit*secondDigit+thirdDigit*thirdDigit*thirdDigit;
+    // we can use Exponentitation Operator
+
+    let ArmstrongNum=firstdigit**3+secondDigit**3+thirdDigit**3;
+
+    console.log(ArmstrongNum);
+    console.log(num);
+
+    if(num==ArmstrongNum)
+ {
+    console.log(num+" is an Armstrong number");
+ }
+ else
+ {
+    console.log(num+" is not an Armstrong number");
+ }
+ </script>

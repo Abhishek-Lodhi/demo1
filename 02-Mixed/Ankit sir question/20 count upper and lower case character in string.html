@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write a function that counts how many upper case and lower case charactor in string.
+       let String="Hello My Name Is Abhishek I Am Learning JavaScript."
+        let uppercount=0;
+        let lowercount=0;
+
+        for (let char of String)
+    {
+        if(char>="A" && char<="Z")
+    {
+        uppercount++;
+    }
+    else if(char>="a" && char<="z")
+    {
+        lowercount++
+    }
+    
+    }
+    console.log("Original sentance: ",String);
+    console.log("Upper Case Count : ",uppercount);
+    console.log("lower Case Count : ",lowercount);
+    </script>
+</body>
+</html>

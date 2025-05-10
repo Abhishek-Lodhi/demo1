@@ -1,0 +1,46 @@
+<script>
+    // const & let keyword : both variable are introduce in ES-6
+    // let: it is represent scopic variable
+
+    function show(){
+        if(true)
+    {
+        var x=10;
+        let y=20;
+        console.log("value of x is",x);
+        console.log("value of y is",y);
+        
+    }
+    console.log("value of x is",x);
+    console.log("value of y is",y);//error: y is not defined
+    
+    }
+    show();
+    
+</script>
+
+<!-- <script>
+    //akshay sir code.
+    //const & let keyword : both variable are  introduce in ES-6
+    
+    /*let : It is represent Scopic variable.
+          : Most widely used inside the control structure block like if,for,etc...
+          : We cannot access outside the block.
+          : we canot re-declare let variable but we can re-assign
+    */
+    
+    function show()
+    {
+      if(true)
+      {
+         var x = 10;
+         let y = 20;
+         console.log("Value of x is : "+x);
+         console.log("Value of y is : "+y);
+      }
+         console.log("Value of x is : "+x);
+         console.log("Value of y is : "+y);  //Error : y is not define
+    }
+    show();
+    
+  </script> -->

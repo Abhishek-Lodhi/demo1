@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // callback function using sync or blocking.
+        function abc(fun,a,b)//fun=show,a=11,b=22
+        {
+            console.log("abc invoked: ");
+            var z=a+b;
+            fun(z);//callback function calling.
+        }
+        //1st
+        function show(result)//result=z.
+        {
+            console.log("result is:",result);
+        }
+        //2nd
+        abc(show,11,22);
+        abc((res)=>{
+            console.log("result is here:",res);
+        },22,34);
+    </script>
+</body>
+</html>

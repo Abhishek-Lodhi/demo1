@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkvalid(){
+            var x=document.getElementById("fname").value;
+            var y=document.getElementById("lname").value;
+           // var x=document.getElementById("name").value;
+
+            console.log(x+":"+y);
+            console.log(x.length+":"+y.length);
+
+            if(x.length==0)
+        {
+            alert("plz enter frist name");
+        }
+        if(y.length==0)
+        {
+            alert("plz enter last name");
+        }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1 style="color: yellow;"> Validation</h1>
+        <input type="text" placeholder="Enter Frist Name" id="fname">
+        <br><br>
+        <input type="text" placeholder="Enter Last Name" id="lname">
+        <br><br>
+        <button onclick="checkvalid()">Submit</button>
+    </center>
+    <hr>
+</body>
+</html> 
+

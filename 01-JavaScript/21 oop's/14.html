@@ -1,0 +1,32 @@
+<script>
+    // Single Level Inheritance: Method Over Riding
+
+    class a
+    {
+        show()
+        {
+            console.log("A class Show called..");
+        }
+        wish()
+        {
+            console.log("A class Wish called..");
+        }
+    }
+    class b extends a
+    {
+        show()
+        {
+            super.show();//if method is same you need to super.method_name to execute base class method 
+            console.log("B class Show called..");
+        }
+        display()
+        {
+            console.log("B class Display called..");
+        }
+    }
+    var obj= new b();
+    obj.show();
+    obj.display();
+    obj.wish();
+
+</script>

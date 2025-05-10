@@ -1,0 +1,54 @@
+<!-- Create Photo Gallery with add and delete images. All Images show in tables and in everytable row only have 5 columns. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+ </head>
+ <body>
+    <h2>Photo Gallery</h2>
+    <input type="text" id="imageURL" placeholder="Enter image URL">
+    <button onclick="addImage()">Add Image</button>
+    <table id="galleryTable"> 
+        <!-- Images will be inserted here -->
+    </table>
+    <script>
+        const galleryTable=document.getElementById("galleryTable");
+        let images=[];
+
+        function addImage()
+        {
+            const url=document.getElementById("imageURL").value.trim();
+
+            if(url)
+        {
+            images.push(url);
+            document.getElementById("imageURL").value="";
+            renderTable();
+        }
+        }
+        function deleteImage(index)
+        {
+            images.splice(index,1);
+            renderTable();
+        }
+        function renderTable()
+        {
+            galleryTable.innerHTML="";
+            let row;
+            images.forEach((image,index)=>{
+                if(index%5===0)
+            {
+                row=galleryTable.insertRow();
+
+            }
+            const cell=row.inserCell();
+            cell.innerHTML=`
+            <image src="${image}" alt="image">
+                <div class="delete-btn" onclick="deleteImage(${index})">Delete</div>`;
+            });
+        }
+    </script>
+ </body>
+ </html>

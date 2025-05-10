@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 8;
+        
+        for (let i = 0; i <=n; i++) {
+            // Spaces for alignment
+    for (let k = 0; k <=n - i; k++) {
+        document.write("&nbsp;&nbsp;&nbsp;");
+     }
+            
+            // Pehle number ko 1 set karna
+            let num = 1;
+            for (let j = 0; j <= i; j++) {
+                document.write(num+" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+                
+                // Agla number calculate karna
+                num = num * (i - j) / (j + 1);
+            }
+            
+            // Nayi line me shift karna
+            document.write("<br>");
+        }
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,23 @@
+<script>
+    var obj1 = {id:101,name:'Mahi',sal:1234.45,contact:'1234567890'};
+    var obj2 = {id:102,name:'Chiku',sal:3234.45,contact:'9234567890'};
+    var obj3 = {id:103,name:'Piku',sal:6234.45,contact:'8234567890'};
+    var obj4 = {id:104,name:'Miki',sal:9234.45,contact:'7234567890'};
+    var obj5 = {id:105,name:'Riki',sal:8234.45,contact:'6234567890'};
+    
+    var obj = [obj1,obj2,obj3,obj4,obj5];  //Create JSON or Array of Objects
+     
+    document.write(typeof obj,"<br>");  //object
+   document.write(obj,"<br>");  //object
+    
+    //Convert Object into JSON or String Format
+    var ob = JSON.stringify(obj);  
+   document.write(typeof ob,"<br>");  //String
+    document.write(ob,"<br>");  //String
+    
+    
+    //convert JSON or String into Object Format 
+    var o = JSON.parse(ob); //object
+   document.write(typeof o,"<br>");
+    document.write(o,"<br>");  //String 
+  </script>

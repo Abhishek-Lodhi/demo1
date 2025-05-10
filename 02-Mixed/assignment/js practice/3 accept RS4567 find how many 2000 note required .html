@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*Write a program to accepts an amount in rupees (Hint Rs4567) and find out how many 
+currency of Rs 2000 required. Also find remaining amount.*/
+
+      numstring = "Rs4567";
+      document.write("<h2>Num with string is:",numstring," </h2>");
+
+      num = numstring.replace("Rs", "");
+      document.write("<h2>only Num is:",num," </h2>");
+
+      currency=parseInt(num/2000);
+      document.write("<h2>Num of not required is:",currency," </h2>");
+
+      remaing_amount=num%2000;
+      document.write("<h2>Remaining Amount is:",remaing_amount," </h2>");
+
+
+
+    </script>
+  </body>
+</html>

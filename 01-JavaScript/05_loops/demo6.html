@@ -1,0 +1,14 @@
+<script>
+    //Sum of Digits From Given number..
+  
+    num = parseInt(prompt("Enter Any Number "));
+    sum = 0;
+    while(num != 0)
+    {
+      rem = num%10;
+      sum = sum + rem;
+      num = parseInt(num/10);
+    }
+    document.write("<h1>Sum of Digits From Given number :"+sum+"</h1>"); 
+    document.write("<h1>Bye.....</h1>");
+  </script>

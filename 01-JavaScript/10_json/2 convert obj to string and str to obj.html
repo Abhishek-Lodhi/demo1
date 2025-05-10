@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var object1 = {id:101,name:'Mahi',sal:1234.45,contact:'1234567890'};
+        var object2 = {id:102,name:'Chiku',sal:3234.45,contact:'9234567890'};
+        var object3 = {id:103,name:'Piku',sal:6234.45,contact:'8234567890'};
+        var object4 = {id:104,name:'Miki',sal:9234.45,contact:'7234567890'};
+        var object5 = {id:105,name:'Riki',sal:8234.45,contact:'6234567890'};
+
+        Object=[object1,object2,object3,object4, object5]; //Create JSON or Array of Objects
+
+               document.write(typeof Object,"<br>");//object
+               document.write( Object,"<br>");//object
+               
+        //Convert Object into JSON or String Format
+               Obj=JSON.stringify(Object);
+               document.write(typeof Obj,"<br>");//string
+               document.write( Obj,"<br>");//string
+
+               
+        //convert JSON or String into Object Format 
+               ob=JSON.parse(Obj);
+               document.write(typeof ob,"<br><hr>");//object
+               document.write( ob,"<br><hr>");//object
+
+    </script>
+    <!-- Akshay sir code -->
+    <script>
+        var obj1 = {id:101,name:'Mahi',sal:1234.45,contact:'1234567890'};
+        var obj2 = {id:102,name:'Chiku',sal:3234.45,contact:'9234567890'};
+        var obj3 = {id:103,name:'Piku',sal:6234.45,contact:'8234567890'};
+        var obj4 = {id:104,name:'Miki',sal:9234.45,contact:'7234567890'};
+        var obj5 = {id:105,name:'Riki',sal:8234.45,contact:'6234567890'};
+        
+        var obj = [obj1,obj2,obj3,obj4,obj5];  //Create JSON or Array of Objects
+         
+        console.log(typeof obj);  //object
+        console.log(obj);  //object
+        
+        //Convert Object into JSON or String Format
+        var ob = JSON.stringify(obj);  
+        console.log(typeof ob);  //String
+         console.log(ob);  //String
+        
+        
+        //convert JSON or String into Object Format 
+        var o = JSON.parse(ob); //object
+        console.log(typeof o);
+         console.log(o);  //String 
+      </script>
+</body>
+</html>

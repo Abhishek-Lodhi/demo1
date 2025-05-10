@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show()//defination
+        {
+            x=parseInt(prompt("Enter any number"));
+            count=0;
+            
+            //check weather it is divide by 1 and itself.
+            for(i=1;i<=x;i++)
+        {
+           if(x%i==0)
+           {
+            count++;
+           }
+        }
+        if(count==2)
+        {
+            document.write(" ",x," Number is prime <br>");
+        }
+        else
+        {
+            document.write(" ",x," Number is Not prime <br>");
+        }
+        document.write("Bye..");
+        }
+        show();//calling.
+
+    </script>
+</body>
+</html>

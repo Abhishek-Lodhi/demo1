@@ -1,0 +1,28 @@
+<script>
+    //	Find sum of first , third and fifth digit of 6 digit number.
+
+    let num=456123;
+    console.log("num is: "+num);//456123
+    console.log(typeof num);
+    //convert this number to string
+
+    let numstr=num.toString();
+    console.log("num is: "+numstr);//"456123"
+    console.log(typeof numstr);
+
+    // 
+    let firstnum=numstr[0];//"4"
+    let thirednum=numstr[2];//"6"
+    let fifthnum=numstr[4];//"2"
+ 
+    let sum=firstnum+thirednum+fifthnum;//'462' because it is string
+    console.log("Sum is:"+sum);
+
+    // convert string into number
+    let x=parseInt(firstnum);//4
+    let y=parseInt(thirednum);//6
+    let z=parseInt(fifthnum);//2
+
+    let s=x+y+z;//12
+    console.log("Sum is:"+s);
+</script>

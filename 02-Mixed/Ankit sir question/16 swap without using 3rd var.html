@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // swap to number without using thired variable
+        function swap()
+        {
+            let x=parseInt(prompt("Enter x number"));
+            let y=parseInt(prompt("Enter y number"));
+
+            console.log("Before swapping:");
+            console.log("x is : ",x);
+            console.log("y is : ",y);
+        
+            x=x+y;//10+20=30
+            y=x-y;//30-20=10
+            x=x-y;//30-10=20
+
+            console.log("After swapping: ");
+            console.log("x is : ",x);
+            console.log("y is : ",y);
+            
+        }
+        swap();//calling
+        //swap();
+    </script>
+</body>
+</html>

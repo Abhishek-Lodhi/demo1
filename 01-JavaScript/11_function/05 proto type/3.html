@@ -1,0 +1,43 @@
+<script>
+function  detail()
+{
+    this.getDetails=()=>{
+        this.id=101;
+        this.name="Abhishek";
+        this.Mobile_no=6260195173;
+        this.age=23;
+    }
+    this.showDetails=()=>{
+        console.log("id is : ", this.id);
+        console.log("name is : ", this.name);
+        console.log("mobile no is : ", this.Mobile_no);
+        console.log("age is : ", this.age);
+    }
+}
+var det= new detail();
+det.getDetails();
+det.showDetails();
+</script>
+
+<!-- <script>
+    function student()
+    {
+      this.getDetails = ()=>{
+        this.id = 101;
+        this.name = "Mahi";
+        this.contact = '1234567890'	  
+        this.fees = 1234.45; 
+      }
+      
+      this.showDetails = ()=>{
+        console.log("Id is : "+this.id);
+        console.log("Name is : "+this.name);
+        console.log("Contact is : "+this.contact);
+        console.log("Fees is : "+this.fees);
+      }
+    }
+     var std = new student();
+     std.getDetails();
+     std.showDetails();
+  
+  </script> -->

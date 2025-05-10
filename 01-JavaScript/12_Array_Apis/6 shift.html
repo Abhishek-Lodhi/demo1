@@ -1,0 +1,24 @@
+<script>
+
+</script>
+
+<script>
+    var arr = [11,22,33,44,55];
+    console.log(arr);//[11, 22, 33, 44, 55]
+    console.log(arr.length);  //5
+    
+    var ele = arr.shift();  //Remove element begining indexing & return removed element 
+    console.log(ele);  // remove 11
+    console.log(arr); //[22, 33, 44, 55]
+    console.log(arr.length); //4
+    
+    ele = arr.shift();
+    console.log(ele);  //  remove 22
+    console.log(arr);//[ 33, 44, 55]
+    console.log(arr.length); //3
+
+    ele = arr.shift();
+    console.log(ele);// remove 33
+    console.log(arr);//[ 44, 55]
+    console.log(arr.length);//2
+  </script>

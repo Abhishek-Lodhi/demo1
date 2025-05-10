@@ -1,0 +1,153 @@
+ <!-- <script>
+  p = parseInt(prompt("Enter Phy Marks."));
+  c = parseInt(prompt("Enter Chem Marks."));
+  m = parseInt(prompt("Enter Maths Marks."));
+
+  if(p<33)
+  {
+    if(c<33)
+	{
+	  if(m<33)
+	  {
+	    document.write("<h1>Fail in all Subjects...</h1>");
+	  }
+	  else
+	  {
+	    document.write("<h1>Fail in Phy & Chem...</h1>");
+	  }
+	}
+	else
+	{
+	   if(m<33)
+	   {
+	     document.write("<h1>Fail in Phy & Maths...</h1>");
+	   }
+	   else
+	   {
+	     document.write("<h1>Suppli in Phy..</h1>");
+	   }
+	}
+  }
+  else{
+     if(c<33)
+	 {
+	    if(m<33)
+		{
+		  document.write("<h1>Fail in Chem & Maths...</h1>");
+		}
+		else
+		{
+		  document.write("<h1>Suppli in Chem...</h1>");
+		}
+	 }
+	 else
+	 {
+	    if(m<33)
+		{
+		   document.write("<h1>Suppli in Maths...</h1>");
+		}
+		else
+		{
+		  total = p + c + m;
+		  per = parseInt(total/3);
+		  if(per>=75)
+		  {
+		     document.write("<h1>Pass in A+ Grade : "+per+"</h1>");
+		  }
+		  else if(per>=60)
+		  {
+		     document.write("<h1>Pass in A Grade : "+per+"</h1>");
+		  }
+		  else if(per>=55)
+		  {
+		     document.write("<h1>Pass in B Grade : "+per+"</h1>");
+		  }
+		  else if(per>=45)
+		  {
+		     document.write("<h1>Pass in C Grade : "+per+"</h1>");
+		  }
+		  else
+		  {
+		     document.write("<h1>Pass in All Subject : "+per+"</h1>");
+		  }
+		  
+		}
+	 }
+  }
+</script>  -->
+<script>
+  p = parseInt(prompt("Enter Physics Marks."));
+  c = parseInt(prompt("Enter chemistry Marks."));
+  m = parseInt(prompt("Enter Maths Marks."));
+
+  if (p < 33)
+   {
+      if (c < 33)
+       {
+          if (m < 33) 
+           {
+          document.write("fail in all subjects");
+           } else 
+          {
+          document.write("fail in physics and chemistry");
+          }
+     }
+     else 
+     {
+      if (m < 33)
+       {
+        document.write("fail in Physics and Maths");
+      } else
+       {
+        document.write("Supply in Physics");
+      }
+     }
+  } 
+  else 
+  {
+    if (c < 33) 
+    {
+      if (m < 33) 
+      {
+        document.write("fail in Chemistry & Maths");
+      } else 
+      {
+        document.write("Supply in Chemistry");
+      }
+    } 
+    else 
+    {
+      if (m < 33) 
+      {
+        document.write("Supply in Maths");
+      }
+      else
+      {
+        total=p+c+m;
+        per=parseInt(total/3);
+        if(per>=75)
+      {
+        document.write("<h1>pass with A<sup>+</sup> Grade : "+per+"%</h1>");
+      }
+      else if(per>=60)
+      {
+        document.write("<h1>pass with A<sup></sup> Grade : "+per+"%</h1>");
+      }
+      else if (per>=55)
+      {
+        document.write("<h1>pass with B Grade : "+per+"%</h1>");
+      }
+      else if (per>=45)
+      {
+        document.write("<h1>pass with C Grade : "+per+"%</h1>");
+      }
+      else
+      {
+        document.write("<h1>pass with D Grade : "+per+"%</h1>");
+      }
+      }
+    }
+  }
+
+
+</script>

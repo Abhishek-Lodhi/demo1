@@ -1,0 +1,24 @@
+body{
+ background-color: aqua;
+}
+.logo{
+    text-align: center;
+    margin-top: 20px;
+}
+.img{
+    /* border: 10px solid rgb(135, 176, 32); */
+    /* border-radius: 100px;
+     */
+}
+.img :hover{
+    background-color: black;
+    transition: 1s ease;
+    transform: scale(0.9);
+}
+.product{
+    background-color:beige;
+    color: red;
+}
+.footer{
+    background-color: blue;
+}

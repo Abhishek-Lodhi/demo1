@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getdata(){
+            var obj1=document.getElementById('data');
+            var obj2=document.getElementById('my');
+            var res=document.getElementById('result');
+
+            //alert(obj1+":"+obj2);
+            alert(obj1.innerHTML+":"+obj2.value);
+
+            var x=obj1.innerHTML+":"+obj2.value;
+            res.innerHTML=x;
+            res.style.color='red';
+            res.style.background='skyblue'
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="data">Hello..</h1>
+    <input type="text" placeholder="Enter data" id="my">
+    <br><br>
+    <button onclick="getdata()">Click me!</button>
+    <h2 id="result"></h2>
+</body>
+</html>

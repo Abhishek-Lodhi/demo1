@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write a function that takes a number and return its reverse.
+
+        function show()//defination
+        {
+           x=parseInt(prompt("Enter any number"));
+           original_num=x;
+           rev=0;
+
+           while(x != 0)
+           {
+           lastdigit = x % 10;      //get last digit.
+           rev = rev * 10 + lastdigit; //add digits to reverse number.
+           x = parseInt (x / 10);     //remove last digit.
+           }
+           
+           document.write("Actual no is:",original_num,"<br>");
+           document.write("Reverse no is:",rev);
+           
+        }
+        show();
+    </script>
+    <!-- chat gpt code -->
+    <!-- <script>
+        function show() {
+            let x = parseInt(prompt("Enter any number")); // User input
+            let original_num = x;
+            let rev = 0;
+    
+            while (x != 0) {
+                let lastdigit = x % 10;       // Get last digit
+                rev = rev * 10 + lastdigit;   // Add digit to reversed number
+                x = parseInt(x / 10);         // Remove last digit
+            }
+    
+            document.write("Actual no is: " + original_num + "<br>");
+            document.write("Reverse no is: " + rev);
+        }
+    
+        show();
+    </script> -->
+    
+</body>
+</html>

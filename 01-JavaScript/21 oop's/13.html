@@ -1,0 +1,22 @@
+<script>
+    // Single Level Inheritance
+    class a
+    {
+        constructor()
+        {
+            console.log("a class constructor invoked");
+        }
+    }
+    class b extends a
+    {
+       
+        constructor()
+        {
+           super(); //it is super constructor: call parent class default constructor
+            console.log("b class constructor invoked");
+        }
+    }
+
+    var obj= new b();
+    
+</script>

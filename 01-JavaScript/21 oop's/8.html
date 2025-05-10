@@ -1,0 +1,32 @@
+<script>
+    //global access
+    class addition
+    {
+        getdata()
+        {
+            //this keyword represent current class object member
+
+            this.x=100;
+            this.y=400;
+        }
+        add()
+        {
+            this.z=this.x+this.y;
+        }
+        showdata()
+        {
+            console.log("x is:"+this.x);
+            console.log("y is:"+this.y);
+            console.log("z is:"+this.z);
+            
+        }
+    }
+    var obj=new addition();
+    console.log(typeof obj);
+    console.log("obj is:"+obj);
+    obj.getdata();
+    obj.add();
+    obj.showdata();
+            
+</script>
+            

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key & Focus Based Event</title>
+    <script>
+        function demo(event){
+            console.log('key pressed:',event.key);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Key Up" onkeyup="demo(event)">
+    <br><br>
+    <input type="text" placeholder="Key press" onkeypress="demo(event)">
+    <br><br>
+    <input type="text" placeholder="Key down" onkeydown="demo(event)">
+    <br><br>
+    <input type="text" placeholder="on Blur" onblur="alert('Morning')"> 
+    <hr>
+    <!-- keydown = when your finger touches the piano key.
+
+keyup = when your finger lifts off the piano key.
+
+keypress=Triggers the demo() function when a character
+ key is pressed.
+
+ onblur :
+Triggers an alert with the message "Morning" when the input loses focus (i.e., you click or tab out of it).
+
+ -->
+</body>
+</html>

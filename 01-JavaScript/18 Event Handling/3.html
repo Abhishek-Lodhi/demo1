@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State change Event</title>
+    <script>
+        function demo(){
+            console.log('demo invoked');
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" value="male" onchange="demo()" name="gen">male
+    <input type="radio" value="male" onchange="demo()" name="gen">female <br>
+
+    <select onchange="demo()">
+        <option value="">indore</option>
+        <option value="">Bhopal</option>
+        <option value="">Sagar</option>
+        <option value="">Ujjain</option>
+        <option value="">Ratlam</option>
+    </select>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow function with return variable without arguments.
+       var add=()=>// defination
+    {
+        x=parseInt(prompt("Enter any number"));
+        y=parseInt(prompt("Enter any number"));
+        z=x+y;
+        return {a:x,b:y,c:z};
+    }
+
+   var ad= add();// calling
+   // document.write("Addition of ",a," and ",b," is : ",z,"<br> ");
+    document.write("Addition of ",ad.a," and ",ad.b," is : ",ad.c,"<br> ");
+
+    </script>
+</body>
+</html>

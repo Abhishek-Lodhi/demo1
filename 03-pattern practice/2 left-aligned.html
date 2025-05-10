@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+             1    
+          1  2    
+       1  2  3    
+    1  2  3  4    
+ 1  2  3  4  5  */
+ n=parseInt(prompt("Enter Any number"));
+ //print rows
+ for(i=1;i<=n;i++)
+ {
+    //print space n-i
+    for(k=1;k<n-i+1;k++)
+ {
+    document.write("&nbsp;&nbsp");
+ }
+ //print columns
+ for(j=1;j<=i;j++)
+ {
+    document.write(j);
+ }
+ document.write("<br>");
+ }
+    </script>
+</body>
+</html>

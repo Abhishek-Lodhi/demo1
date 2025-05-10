@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find the max and min element from array.
+        arr=[5,10,15,20,25,30,35,40,45,50];
+        max=arr[0];
+        min=arr[0];
+        for(i=0;i<arr.length;i++)
+    {
+       document.write(arr[i]+"<br>");
+       if(max<arr[i])
+       {
+        max=arr[i];
+       }
+       if(min>arr[i])
+       {
+        min=arr[i];
+       }
+       //document.write{"<h1>max array element is : ",max," </h1>"};
+       //document.write{"<h1>min array element is : ",min," </h1>"};
+    }
+    document.write("<h1>max array element is : ",max," </h1>");
+    document.write("<h1>min array element is : ",min," </h1>");
+
+
+    </script>
+</body>
+</html>

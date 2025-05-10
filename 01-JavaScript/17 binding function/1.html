@@ -1,0 +1,118 @@
+<script>
+    /*
+    binding function
+    call()
+    apply()
+    bind()
+    */
+   var emp={
+    id:101,
+    name:"abhishek",
+    sal:15000,
+    printdetails:function (){
+        console.log("name : ",this.name);
+    }
+   }
+   emp.printdetails();//abhishek
+
+   var emp1={
+    id:102,
+    name:"Rohit",
+    age:18,
+    printdetails:function(){
+        console.log("name : ",this.name);
+    }
+   }
+   emp1.printdetails();//rohit
+
+   //using call function.
+
+   var emp2={
+    id:103,
+    name:"Rahul",
+    age:19,
+    printdetails:function(){
+        console.log("name : ",this.name);
+    }
+   }
+   var emp3={
+    id:104,
+    name:"Mohit",
+    sal:2000
+   }
+   var emp4={
+    id:104,
+    name:"sanjay",
+    sal:2000
+   }
+   
+   emp2.printdetails();//rahul
+   emp2.printdetails.call(emp3);//mohit
+   emp2.printdetails.call(emp4);//sanjay
+
+   var em={
+    id:104,
+    name:"ram",
+    sal:2000
+   }
+   var em1={
+    id:104,
+    name:"shyam",
+    sal:2000
+   }
+   var em2={
+    id:104,
+    name:"mohan",
+    sal:2000
+   }
+   var printdetails=function(){
+    console.log("name : ",this.name);
+   }
+   printdetails.call(em);//ram
+   printdetails.call(em1);//shyam
+   printdetails.call(em2);//mohan
+   
+</script>
+
+<script>
+    //sir
+    //Befotre call : 
+    /* 
+     var emp = {id:101,name:'Mahi',sal:123456,printDetails:function(){
+                   console.log("Name : "+this.name);
+                 }}
+    
+      var emp1 = {id:102,name:'Chiku',sal:123456,printDetails:function(){
+                   console.log("Name : "+this.name);
+                 }}			 
+                 
+        emp.printDetails();
+        emp1.printDetails();
+    */	
+    
+    //Using call : function
+    /*
+      var emp = {id:101,name:'Mahi',sal:123456,printDetails:function(){
+                   console.log("Name : "+this.name);
+                 }}
+    
+      var emp1 = {id:102,name:'Chiku',sal:123456}			 
+      var emp2 = {id:103,name:'Piku',sal:923456}
+        
+      emp.printDetails();
+      emp.printDetails.call(emp1)
+      emp.printDetails.call(emp2)  
+      */			  
+      var emp = {id:101,name:'Sonu',sal:123456}
+      var emp1 = {id:102,name:'Monu',sal:123456}			 
+      var emp2 = {id:103,name:'Golu',sal:923456}
+         
+      var printDetails = function(){
+                   console.log("Name : "+this.name);
+       }	 
+         
+         printDetails.call(emp)
+         printDetails.call(emp1)
+         printDetails.call(emp2)
+        
+    </script>

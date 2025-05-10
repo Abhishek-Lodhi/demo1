@@ -1,0 +1,28 @@
+<script>
+
+</script>
+
+<script>
+    function demo(){
+      
+      var obj = new Promise((resolve,reject)=>{
+        resolve(5);
+        reject();
+      })
+      
+      return obj;
+    }
+    var result = demo();
+    
+    console.log("object is : "+result);
+    console.log(result);
+    console.log(result);
+    console.log("demo  is : "+JSON.stringify(result));
+    console.log(result);
+    
+    result.then((value)=>{
+      console.log("Hello..."+value);
+    }).catch(()=>{
+       console.log("Bye.....");
+    })
+  </script>

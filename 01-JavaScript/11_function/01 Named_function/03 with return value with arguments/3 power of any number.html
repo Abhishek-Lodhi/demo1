@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //03 with return variable with arguments.
+
+       function power(x,y)
+       {
+        p=1;
+        for(var i=0;i<y;i++)
+       {
+        p=p*x;
+        //p=1*5=5;
+        //p=5*5=25;
+        //p=25*5=125;
+        //p=125*5=625;
+       }
+       return p;
+       }
+       a=parseInt(prompt("Enter any number"));
+       b=parseInt(prompt("Enter any power"));
+
+       var result=power(a,b);
+       document.write("Number ",a," Power of ",b,"  is : ",result," ");
+
+    </script>
+</body>
+</html>

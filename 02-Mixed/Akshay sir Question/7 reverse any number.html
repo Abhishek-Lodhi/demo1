@@ -1,0 +1,16 @@
+<script>
+    // print num in Reverse Order.
+    n=parseInt(prompt("Enter any number"));
+    original_number=n;
+    sum=0;
+    while(n!=0)
+{
+    
+//document.write("<h1> Before Reverse =",n," </h1>");
+    rem=n%10;
+    sum=sum*10+rem;
+    n=parseInt(n/10);
+}
+document.write("<h1> Before Reverse =",original_number," </h1>");
+document.write("<h1> after Reverse =",sum," </h1>");
+</script>

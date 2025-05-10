@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getdata(){
+            //get id or object
+            var obj1=document.getElementById('data');
+            var obj2=document.getElementById('my');
+            alert(obj1+":"+obj2);
+            alert(obj1.innerHTML+":"+obj2.value);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="data">Hello...</h1>
+    <input type="text" placeholder="Enter data" id="my">
+    <button onclick="getdata()">Click me!</button>
+    <hr>
+</body>
+</html>

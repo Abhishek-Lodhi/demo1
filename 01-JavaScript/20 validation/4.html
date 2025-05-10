@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Validation</title>
+    <style>
+        #success {
+      color: green;
+      font-weight: bold;
+    }
+    </style>
+    <script>
+        function checkvalid(){
+            var x=document.getElementById("pass").value;
+            var y=document.getElementById("rpass").value;
+
+            var a=document.getElementById("err1");
+            var b=document.getElementById("err2");
+
+            var success=document.getElementById("success");
+
+            let isvalid=true;
+
+            //check if first password is empty
+
+            if(x.length==0)
+        {
+            a.innerHTML="please enter passwored";
+            a.style.color='red';
+            isvalid=false;
+        }
+        //check if length is < 6
+        else if(x.length<6)
+        {
+            a.innerHTML="Password must be at least 6 characters";
+            a.style.color='red';
+            isvalid=false;
+        }
+        else
+        {
+            a.innerHTML=''
+        }
+
+        //check if second passwored is empty
+        if(y.length==0)
+        {
+            b.innerHTML="please re-enter passwored";
+            b.style.color='red';
+            isvalid=false;
+        }
+        else if(x!==y)
+        {
+            b.innerHTML="passwords do not match";
+            b.style.color='yellow';
+            isvalid=false;
+        }
+        else
+        {
+            b.innerHTML='';
+        }
+        //show success message
+        if(isvalid)
+        {
+            success.innerHTML='password matched and valid';
+        }
+        else
+        {
+            success.innerHTML='';
+        }
+
+        // if(x.length>0 && y.length>0 && x!=y)
+        // {
+        //     b.innerHTML="Passwored do not match";
+        //     b.style.color='red';
+        // }
+        }
+
+        // function checkpass(){
+        //     if(y.value!==x.value)
+        // {
+        //     b.innerHTML="please enter correct passwored";
+        //     b.style.color='red';
+        // }
+        // else
+        // {
+        //     b.innerHTML='';
+        // }
+        // }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Password Validation</h1>
+        <input type="text" placeholder="Enter Passwored" id="pass" onblur="checkvalid()">
+        <span id="err1"></span>
+        <br><br>
+        <input type="text" placeholder="Re-Enter Passwored" id="rpass" onkeyup="checkpass()">
+        <span id="err2"></span>
+        <br><br>
+        <button onclick="checkvalid()">Submit</button>
+        <br><br>
+        <div id="success"></div>
+    </center>
+    <hr>
+</body>
+</html> 
+

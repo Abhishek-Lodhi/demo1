@@ -1,0 +1,20 @@
+<script>
+    //find factorial of any number using class.
+
+    class factorial
+    {
+        fac()
+        {
+          var  x=parseInt(prompt("Enter any Number"));
+          var  f=1;
+            for(var i=1;i<=x;i++)
+        {
+            console.log(f*i);
+           var f=f*i;
+        }
+        console.log("factorial of "+x+" is : "+f);
+        }
+    }
+    var obj= new factorial();
+    obj.fac();
+</script>

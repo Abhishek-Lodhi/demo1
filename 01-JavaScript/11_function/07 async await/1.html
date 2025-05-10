@@ -1,0 +1,30 @@
+<script>
+
+</script>
+<script>
+    const demo = ()=>{
+      
+      var obj = new Promise((resolve,reject)=>{
+         //resolve("Hello...");
+         reject("Bye....");
+      })
+      
+      return obj;
+    }
+    
+    // const check = async()=>{
+    //  var resp = await demo();
+    //  console.log("Respo is : "+resp);
+     
+    // }
+    const check = async () => {
+    try {
+        var resp = await demo();
+        console.log("Respo is : " + resp);
+    } catch (error) {
+        console.log("Error caught:", error);
+    }
+    console.log("hello");
+}
+    check();
+  </script>
